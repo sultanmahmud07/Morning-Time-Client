@@ -1,0 +1,556 @@
+@font-face {
+  font-family: kalpurush;
+  src: url(./font/Kalpurush.ttf);
+ }
+ 
+
+body {
+  background-color: #ecf2ff91;
+  /* min-height: 100vh; */
+  margin: 0;
+  padding: 0;
+  color: black;
+  font-family: kalpurush;
+}
+
+.common-width{
+  width: 92%;
+  margin: auto;
+}
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+  color: rgb(85, 84, 84);
+}
+p{
+  margin: 0;
+  padding: 0;
+  color: rgb(35, 35, 35);
+}
+a {
+  text-decoration: none;
+  font-weight: 400px;
+}
+.input{
+  border: none;
+  box-shadow: 5px, 4px, 3px, 4px;
+}
+.input:focus{
+  outline: none;
+  
+}
+.select{
+  /* border: 1px solid #3498db; */
+  /* box-shadow: 4px 3px 4px 3px #3498db; */
+  
+}
+.select:focus{
+  outline: none;
+
+}
+.slider-content-with-image{
+  display: grid;
+  grid-template-columns: auto auto ;
+}
+
+/*=========================================================
+            Header section css code start here 
+ =========================================================*/
+ .header{
+  border-bottom: 1px solid rgba(128, 128, 128, 0.64);
+ }
+.logo {
+  width: 200px;
+}
+.right-section{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+/*=========================================================
+            Header section css code End here 
+ =========================================================*/
+/*=========================================================
+            Navbar section css code start here 
+ =========================================================*/
+.main-navbar {
+  width: 78%;
+  margin: auto;
+}
+.main-navbar ul{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+  margin: 2px;
+  padding: 5px;
+}
+.main-navbar ul li{
+  border-bottom: 2px solid rgba(0, 76, 255, 0);
+  transition: 0.5s;
+}
+.main-navbar ul li:hover{
+  border-bottom: 2px solid rgba(0, 76, 255, 0.896);
+}
+.main-navbar ul li a{
+  cursor: pointer;
+ font-size: 13px;
+ font-weight: 700;
+}
+.card_{
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 5px 30px rgba(71, 71, 75, 0.1);
+  padding: 15px;
+  /* font-family:; */
+
+}
+.select-area-border{
+  border-left: 4px solid #0a66c2;
+}
+
+/*=========================================================
+            Banner and video section css code here 
+ =========================================================*/
+ .coustom_shadow{
+  padding: 15px;
+  box-shadow: rgba(145, 158, 171, 0.2) 0px 0px 2px 0px,rgba(145, 158, 171, 0.12) 0px 12px 24px -4px;
+ }
+ .custom_p{
+  line-height: 1.5;
+ }
+ .papper-section{
+  /* border: 1px solid #5D87FF; */
+  box-shadow: rgba(145, 158, 171, 0.2) 0px 0px 2px 0px,rgba(145, 158, 171, 0.12) 0px 12px 24px -4px;
+ }
+ .papper-color-div{
+  padding: 8px 0px;
+  background-color:  #5D87FF;
+ }
+
+ .single-card{
+  background-color: white;
+  display: flex;
+  padding: 15px;
+  margin-top: 20px;
+  border-radius: 8px;
+  box-shadow:rgba(145, 158, 171, 0.2) 0px 0px 2px 0px,rgba(145, 158, 171, 0.12) 0px 12px 24px -4px ;
+
+ }
+ .card_shadow{
+  box-shadow:rgba(145, 158, 171, 0.2) 0px 0px 2px 0px,rgba(145, 158, 171, 0.12) 0px 12px 24px -4px ;
+ }
+ .single-video{
+  background-color: white;
+  border-radius: 8px;
+box-shadow: rgba(145, 158, 171, 0.2) 0px 0px 2px 0px,rgba(64, 64, 65, 0.12) 0px 12px 24px -4px ;
+  
+ }
+ 
+ .video{
+  position: relative;
+ }
+ .video-icon-s{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ }
+ .video-icon-s svg{
+color: white;
+font-size: 30px;
+ }
+ .video-top{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+ }
+
+
+
+
+
+ .carousel-container {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.carousel-slide {
+  display: flex;
+  transition: transform 1s ease-in-out;
+}
+
+.carousel-slide img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.carousel-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+}
+
+.prev {
+  left: 0;
+}
+
+.next {
+  right: 0;
+}
+
+.dot-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: gray;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.dot.active {
+  background-color: black;
+}
+
+/*=========================================================
+     Online count and last news section css code here 
+ =========================================================*/
+ .opinion-card{
+  background-color: #FFF9E1;
+  border-radius: 10px;
+  border-bottom: 2px solid #5D87FF;
+  padding: 10px;
+ }
+.author{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3px;
+}
+.author-img{
+width: 50%;
+margin: auto;
+}
+.vot_box{
+  border: 1px solid #0a66c2;
+}
+
+/*=========================================================
+     Selective section css code here 
+ =========================================================*/
+.selective-top{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 4px solid #5D87FF;
+  padding: 10px 0px;
+  margin-bottom: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+.top_calander{
+  margin: 10px;
+  
+}
+.top_calander select{
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border: 1px solid #5D87FF;
+
+}
+.calendar {
+  max-width: 300px;
+  margin: 0 auto;
+  /* border: 1px solid #ccc; */
+  padding: 10px;
+}
+
+.calendar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.calendar-header button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.calendar-days {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 5px;
+}
+
+.calendar-day {
+  text-align: center;
+  padding: 5px;
+  border: 1px solid #ccc;
+}
+.calendar-day:hover {
+  background-color: #3498db;
+  color: white;
+cursor: pointer;
+} 
+
+
+
+
+/* 
+.calendar {
+  max-width: 300px;
+  margin: 0 auto;
+  border: 1px solid #ccc;
+  padding: 10px;
+  background-color: white;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.calendar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #3498db;
+  color: white;
+  border-radius: 5px;
+}
+
+.calendar-header button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  color: white;
+  transition: color 0.2s ease-in-out;
+}
+
+
+
+
+/*=========================================================
+    News Details page section css code here 
+ =========================================================*/
+.details-left-news {
+  padding: 20px 0;
+}
+.details-left-icon {
+  padding-right: 10px;
+}
+.left-small-bar-flex {
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+}
+.left-small-bar {
+  width: 3px;
+  height: 25px;
+  background-color: gray;
+  display: inline-block;
+  margin-right: 15px;
+}
+.left-bottom-news {
+  padding: 8px;
+}
+.left-bottom-news-des {
+  font-weight: 600;
+}
+.left-bottom-news-flex {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid gray;
+}
+.left-bottom-news-flex:last-child {
+  border-bottom: none;
+}
+.details-top-icon {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.details-top-icon-top-inner span {
+  font-size: 20px;
+  margin: 0 13px;
+  background: #8e0006;
+  display: inline-block;
+  width: 35px;
+  text-align: center;
+  height: 33px;
+  border-radius: 50%;
+  color: white;
+}
+.details-top-icon-top-inner .facebook {
+  background-color: #1877f2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.details-top-icon-top-inner .messenger {
+  background-color: #a030ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.details-top-icon-top-inner .whatsapp {
+  background-color: #00a884;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.details-top-icon-top-inner .twitter {
+  background-color: #1da1f2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.details-top-icon-top-inner .linkedin {
+  background-color: #0a66c2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.left-bottom-news-image-section {
+  margin-right: 12px;
+}
+.left-bottom-news-flex img {
+  width: 230px;
+}
+.details-bottom {
+  background: gray;
+  color: white;
+  padding: 5px;
+  margin: 20px 0;
+}
+.details-bottom-button-link {
+  margin: 20px 0;
+}
+.details-bottom-button-link a {
+  background: lightgray;
+  padding: 10px;
+  color: white;
+}
+.details-bottom-image {
+  width: 100px;
+}
+.card {
+  border-radius: 0;
+}
+/* tab css start */
+.tab-container {
+  max-width: 800px;
+  /* margin: 50px auto; */
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9;
+}
+
+.tab-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.tab-button {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.tab-button.active {
+  background-color: #8e0006;
+  width: 100%;
+}
+.number-box {
+  width: 50px;
+  height: 50px;
+  background: lightblue;
+  color: white;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  margin-right: 10px;
+  font-size: 20px;
+}
+.tab-content {
+  display: none;
+  margin-top: 20px;
+  min-height: 350px;
+  overflow-y: scroll;
+}
+
+.tab-content h2 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.tab-content p {
+  font-size: 16px;
+  color: #666;
+}
+
+
+
+/* ----------------------Rajniti Section Start------------------------ */
+.rajneti-top-inner {
+  position: relative;
+  height: 100%;
+  
+}
+.rajneti-left-image {
+  height: 100%;
+  border-radius: 5px;
+
+}
+.rajneti-top-inner-title {
+  position: absolute;
+  bottom: 20px;
+  color: white;
+  font-size: 25px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  text-align: center;
+  background: #00000057;
+}
+.title-font-size {
+  font-size: 18px !important;
+}
+
+
