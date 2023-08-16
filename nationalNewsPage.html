@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="corporate">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Morning-Time</title>
+  <link rel="shortcut icon" href="./images/favicon.jpg" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+  <!-- Header section code start hare  -->
+  <header class="header py-2">
+    <div class="common-width grid grid-cols-1 md:grid-cols-2 gap-5">
+      <div class="logo mt-2">
+        <img class="" src="./images/logo.jpeg" alt="">
+      </div>
+      <div class="right-section ">
+        <div class="select-city grid grid-cols-3 gap-2">
+          <select class="select w-full select-sm">
+            <option selected>ঢাকা</option>
+            <option>চট্টগ্রাম </option>
+            <option>রাজশাহী </option>
+            <option>খুলনা </option>
+            <option>সিলেট </option>
+            <option>বরিশাল </option>
+            <option>রংপুর </option>
+            <option>ময়মনসিংহ </option>
+          </select>
+          <select class="select  w-full select-sm">
+            <option> টাঙ্গাইল</option>
+            <option> গাজীপুর</option>
+            <option>মানিকগঞ্জ</option>
+            <option>ঢাকা</option>
+            <option>রাজবাড়</option>
+            <option>মাদারীপুর</option>
+            <option>গোপালগঞ্জ</option>
+          </select>
+          <select class="select  w-full select-sm">
+            <option>ঢাকা উত্তর</option>
+            <option>ঢাকা দক্ষিণ </option>
+            <option>ধামরাই উপজেলা</option>
+            <option>সাভার উপজেলা</option>
+            <option>দোহার উপজেলা</option>
+            <option>নবাবগঞ্জ উপজেলা</option>
+            <option>কেরানীগঞ্জ উপজেলা</option>
+          </select>
+        </div>
+        <div class="r-icon ">
+          <button class="btn btn-ghost btn-circle">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+            </svg>
+          </button>
+          <button class="btn btn-ghost btn-circle">
+            <div class="indicator">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" />
+              </svg>
+              <span class="badge badge-xs badge-primary indicator-item"></span>
+            </div>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- Navbar code start hare  -->
+  <nav class="shadow hidden lg:block">
+    <div class="main-navbar">
+      <ul>
+        <li><a href="./index.html"><i class="fa-solid fa-house"></i></a></li>
+        <li><a href="./LatestNewsPage.html"><img class="w-3 mr-1 mb-1 rounded-full"
+              src="https://www.kalbela.com/assets/verified_icon/menu/country-news.png?v=1" alt="">সর্বশেষ</a></li>
+        <li><a href="./nationalNewsPage.html" class="text-blue-500"><img class="w-3 mr-1 mb-1 rounded-full"
+              src="https://www.kalbela.com/assets/verified_icon/menu/country-news.png?v=1" alt="">জাতীয়</a></li>
+        <li><a href="./rajniti.html"><img class="w-3 mr-1 mb-1 rounded-full"
+              src="https://www.kalbela.com/assets/verified_icon/menu/country-news.png?v=1" alt="">রাজনীতি</a></li>
+        <li><a><img class="w-3 mr-1 mb-1 rounded-full"
+              src="https://www.kalbela.com/assets/verified_icon/menu/country-news.png?v=1" alt="">সারাদেশ</a></li>
+        <li><a><img class="w-3 mr-1 mb-1 rounded-full"
+              src="https://www.kalbela.com/assets/verified_icon/menu/country-news.png?v=1" alt="">বিশ্ব</a></li>
+        <li><a><img class="w-3 mr-1 mb-1 rounded-full"
+              src="https://www.kalbela.com/assets/verified_icon/menu/country-news.png?v=1" alt="">বিনোদন</a></li>
+        <li><a><img class="w-3 mr-1 mb-1 rounded-full"
+              src="https://www.kalbela.com/assets/verified_icon/menu/country-news.png?v=1" alt="">খেলা</a></li>
+        <li><a><img class="w-3 mr-1 mb-1 rounded-full"
+              src="https://www.kalbela.com/assets/verified_icon/menu/country-news.png?v=1" alt="">বাণিজ্য</a></li>
+        <li><a><img class="w-3 mr-1 mb-1 rounded-full"
+              src="https://www.kalbela.com/assets/verified_icon/menu/country-news.png?v=1" alt="">চাকরি</a></li>
+        <li><a><img class="w-3 mr-1 mb-1 rounded-full"
+              src="https://www.kalbela.com/assets/verified_icon/menu/country-news.png?v=1" alt="">মতামত</a></li>
+        <li><a><img class="w-3 mr-1 mb-1 rounded-full"
+              src="https://www.kalbela.com/assets/verified_icon/menu/country-news.png?v=1" alt="">ভিডিও</a></li>
+        <li><a><img class="w-3 mr-1 mb-1 rounded-full"
+              src="https://www.kalbela.com/assets/verified_icon/menu/country-news.png?v=1" alt="">অডিও</a></li>
+        <li><a><i class="fa fa-solid fa-bars"></i></a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Headline showing section here  -->
+  <section class="bg-[#3498db] pt-[4px] mt-3">
+    <div class="common-width relative">
+      <div class="text-white text-lg ">
+        <!-- <span class="text-xl font-semibold absolute left-0 top-0  w-20 bg-[#3498db]">ব্রেকিং  :</span> -->
+        <a href="#">
+          <marquee>
+            দেলাওয়ার হোসাইন সাঈদী মারা গেছেন রাজধানীসহ দেশের বিভিন্ন স্থানে ভূমিকম্পন অনুভূত
+          </marquee>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- --------------------------------
+    National New Banner section here 
+    ---------------------------------->
+  <section class="md:mb-8">
+    <div class="common-width">
+      <h2 class="flex items-center text-xl font-semibold text-blue-500 gap-3 my-2"><a href="./index.html"><span
+            class="text-black"><i class="fa-solid fa-house"></i></a> /</span>জাতীয়</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-1 md:my-3">
+        <div class="ll">
+          <div class="top-img relative">
+            <img class="w-full rounded-md" src="https://www.kalbela.com/assets/news_photos/2023/08/16/image-15640-1692204551.jpg"
+              alt="">
+            <a class="" href="#">
+              <h2
+                class="text-2xl absolute bottom-0 left-0 nation_news_card_title_bg w-full p-4 rounded-b-md md:pt-6 text-center font-semibold text-white hover:text-blue-400">
+                
+                আইনশৃঙ্খলা পরিস্থিতির অবনতির চেষ্টা হলে কঠোরভাবে দমন করা হবে : আইজিপি </h2>
+            </a>
+          </div>
+        </div>
+        <div class="grid grid-cols-2 gap-4 pl-5">
+          <!-- card  -->
+          <div class="top-img relative">
+            <img class="w-full rounded-md" src="https://www.kalbela.com/assets/news_photos/2023/08/16/image-15636-1692201511.jpg"
+              alt="">
+            <a class="" href="#">
+              <h2
+                class="text-lg absolute bottom-0 left-0 nation_news_card_title_bg w-full p-1 rounded-b-md md:pt-4 text-center font-semibold text-white hover:text-blue-400">
+                
+                
+                বঙ্গোপসাগরের নিয়ন্ত্রণ চায় যুক্তরাষ্ট্র : প্রধানমন্ত্রী  </h2>
+            </a>
+          </div>
+          <!-- card  -->
+          <div class="top-img relative">
+            <img class="w-full rounded-md" src="https://www.kalbela.com/assets/news_photos/2023/08/16/image-15634-1692199951.jpg"
+              alt="">
+            <a class="" href="#">
+              <h2
+                class="text-lg absolute bottom-0 left-0 nation_news_card_title_bg w-full p-1 rounded-b-md md:pt-4 text-center font-semibold text-white hover:text-blue-400">
+                
+                ৩ সেপ্টেম্বর বসছে চলতি সংসদের ‘শেষ অধিবেশন’ </h2>
+            </a>
+          </div>
+          <!-- card  -->
+          <div class="top-img relative">
+            <img class="w-full rounded-md" src="https://www.kalbela.com/assets/news_photos/2023/08/16/image-15638-1692202246.jpg"
+              alt="">
+            <a class="" href="#">
+              <h2
+                class="text-lg absolute bottom-0 left-0 nation_news_card_title_bg w-full p-1 rounded-b-md md:pt-4 text-center font-semibold text-white hover:text-blue-400">
+                
+                ৩ সেপ্টেম্বর বসছে চলতি সংসদের ‘শেষ অধিবেশন’ </h2>
+            </a>
+          </div>
+          <!-- card  -->
+          <div class="top-img relative">
+            <img class="w-full rounded-md" src="https://www.kalbela.com/assets/news_photos/2023/08/16/image-15631-1692198776.jpg"
+              alt="">
+            <a class="" href="#">
+              <h2
+                class="text-lg absolute bottom-0 left-0 nation_news_card_title_bg w-full p-1 rounded-b-md md:pt-4 text-center font-semibold text-white hover:text-blue-400">
+                
+                ৩ সেপ্টেম্বর বসছে চলতি সংসদের ‘শেষ অধিবেশন’ </h2>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- --------------------------------
+    National New Banner section here 
+    ---------------------------------->
+  <section class="my-20">
+    <div class="common-width">
+      <div class="grid grid-cols-1 lg:grid-cols-6 gap-4">
+       <div class="lg:col-span-4 ">
+        <div class="flex flex-col gap-4">
+          <div class="flex items-center bg-white shadow-md gap-3 rounded-md ">
+            <img class="w-1/3 rounded-l-md"
+              src="https://www.kalbela.com/assets/news_photos/2023/08/16/image-15630-1692198517.jpg"
+              alt="">
+            <div class="text-area ">
+              <a href="#">
+                <h4 class="text-xl font-semibold text-gray-900 hover:text-blue-500 my-2">বাংলাদেশ শিল্পকলা একাডেমির আয়োজনে ’কবিতা ও গানে বঙ্গবন্ধু’ অনুষ্ঠিত
+                </h4>
+                <p>বাংলাদেশ শিল্পকলা একাডেমির আয়োজনে শোকাবহ আগস্টে মাসব্যাপী কমর্সূচি পালন করছে একাডেমি। ১৯৭৫ সালের ১৫ আগস্ট জাতির পিতা বঙ্গবন্ধু শেখ মুজিবুর রহমানকে সপরিবারে হত্যার ঘটনা ইতিহাসের এক কলঙ্কজনক অধ্যায়। 
+
+                  ১৫ আগস্ট জাতির...</p>
+                <p class="flex gap-2 py-2 items-center text-xs text-gray-500"><span><i
+                      class="fa fa-regular fa-clock"></i></span><span>৩ ঘণ্টা আগে </span></p>
+              </a>
+            </div>
+          </div>
+          <div class="flex items-center bg-white shadow-md gap-3 rounded-md ">
+            <img class="w-1/3 rounded-l-md"
+              src="https://www.kalbela.com/assets/news_photos/2023/08/16/image-15630-1692198517.jpg"
+              alt="">
+            <div class="text-area ">
+              <a href="#">
+                <h4 class="text-xl font-semibold text-gray-900 hover:text-blue-500 my-2">বাংলাদেশ শিল্পকলা একাডেমির আয়োজনে ’কবিতা ও গানে বঙ্গবন্ধু’ অনুষ্ঠিত
+                </h4>
+                <p>বাংলাদেশ শিল্পকলা একাডেমির আয়োজনে শোকাবহ আগস্টে মাসব্যাপী কমর্সূচি পালন করছে একাডেমি। ১৯৭৫ সালের ১৫ আগস্ট জাতির পিতা বঙ্গবন্ধু শেখ মুজিবুর রহমানকে সপরিবারে হত্যার ঘটনা ইতিহাসের এক কলঙ্কজনক অধ্যায়। 
+
+                  ১৫ আগস্ট জাতির...</p>
+                <p class="flex gap-2 py-2 items-center text-xs text-gray-500"><span><i
+                      class="fa fa-regular fa-clock"></i></span><span>৩ ঘণ্টা আগে </span></p>
+              </a>
+            </div>
+          </div>
+          <div class="flex items-center bg-white shadow-md gap-3 rounded-md ">
+            <img class="w-1/3 rounded-l-md"
+              src="https://www.kalbela.com/assets/news_photos/2023/08/16/image-15630-1692198517.jpg"
+              alt="">
+            <div class="text-area ">
+              <a href="#">
+                <h4 class="text-xl font-semibold text-gray-900 hover:text-blue-500 my-2">বাংলাদেশ শিল্পকলা একাডেমির আয়োজনে ’কবিতা ও গানে বঙ্গবন্ধু’ অনুষ্ঠিত
+                </h4>
+                <p>বাংলাদেশ শিল্পকলা একাডেমির আয়োজনে শোকাবহ আগস্টে মাসব্যাপী কমর্সূচি পালন করছে একাডেমি। ১৯৭৫ সালের ১৫ আগস্ট জাতির পিতা বঙ্গবন্ধু শেখ মুজিবুর রহমানকে সপরিবারে হত্যার ঘটনা ইতিহাসের এক কলঙ্কজনক অধ্যায়। 
+
+                  ১৫ আগস্ট জাতির...</p>
+                <p class="flex gap-2 py-2 items-center text-xs text-gray-500"><span><i
+                      class="fa fa-regular fa-clock"></i></span><span>৩ ঘণ্টা আগে </span></p>
+              </a>
+            </div>
+          </div>
+          <div class="flex items-center bg-white shadow-md gap-3 rounded-md ">
+            <img class="w-1/3 rounded-l-md"
+              src="https://www.kalbela.com/assets/news_photos/2023/08/16/image-15630-1692198517.jpg"
+              alt="">
+            <div class="text-area ">
+              <a href="#">
+                <h4 class="text-xl font-semibold text-gray-900 hover:text-blue-500 my-2">বাংলাদেশ শিল্পকলা একাডেমির আয়োজনে ’কবিতা ও গানে বঙ্গবন্ধু’ অনুষ্ঠিত
+                </h4>
+                <p>বাংলাদেশ শিল্পকলা একাডেমির আয়োজনে শোকাবহ আগস্টে মাসব্যাপী কমর্সূচি পালন করছে একাডেমি। ১৯৭৫ সালের ১৫ আগস্ট জাতির পিতা বঙ্গবন্ধু শেখ মুজিবুর রহমানকে সপরিবারে হত্যার ঘটনা ইতিহাসের এক কলঙ্কজনক অধ্যায়। 
+
+                  ১৫ আগস্ট জাতির...</p>
+                <p class="flex gap-2 py-2 items-center text-xs text-gray-500"><span><i
+                      class="fa fa-regular fa-clock"></i></span><span>৩ ঘণ্টা আগে </span></p>
+              </a>
+            </div>
+          </div>
+          <div class="flex items-center bg-white shadow-md gap-3 rounded-md ">
+            <img class="w-1/3 rounded-l-md"
+              src="https://www.kalbela.com/assets/news_photos/2023/08/16/image-15630-1692198517.jpg"
+              alt="">
+            <div class="text-area ">
+              <a href="#">
+                <h4 class="text-xl font-semibold text-gray-900 hover:text-blue-500 my-2">বাংলাদেশ শিল্পকলা একাডেমির আয়োজনে ’কবিতা ও গানে বঙ্গবন্ধু’ অনুষ্ঠিত
+                </h4>
+                <p>বাংলাদেশ শিল্পকলা একাডেমির আয়োজনে শোকাবহ আগস্টে মাসব্যাপী কমর্সূচি পালন করছে একাডেমি। ১৯৭৫ সালের ১৫ আগস্ট জাতির পিতা বঙ্গবন্ধু শেখ মুজিবুর রহমানকে সপরিবারে হত্যার ঘটনা ইতিহাসের এক কলঙ্কজনক অধ্যায়। 
+
+                  ১৫ আগস্ট জাতির...</p>
+                <p class="flex gap-2 py-2 items-center text-xs text-gray-500"><span><i
+                      class="fa fa-regular fa-clock"></i></span><span>৩ ঘণ্টা আগে </span></p>
+              </a>
+            </div>
+          </div>
+          <div class="flex items-center bg-white shadow-md gap-3 rounded-md ">
+            <img class="w-1/3 rounded-l-md"
+              src="https://www.kalbela.com/assets/news_photos/2023/08/16/image-15630-1692198517.jpg"
+              alt="">
+            <div class="text-area ">
+              <a href="#">
+                <h4 class="text-xl font-semibold text-gray-900 hover:text-blue-500 my-2">বাংলাদেশ শিল্পকলা একাডেমির আয়োজনে ’কবিতা ও গানে বঙ্গবন্ধু’ অনুষ্ঠিত
+                </h4>
+                <p>বাংলাদেশ শিল্পকলা একাডেমির আয়োজনে শোকাবহ আগস্টে মাসব্যাপী কমর্সূচি পালন করছে একাডেমি। ১৯৭৫ সালের ১৫ আগস্ট জাতির পিতা বঙ্গবন্ধু শেখ মুজিবুর রহমানকে সপরিবারে হত্যার ঘটনা ইতিহাসের এক কলঙ্কজনক অধ্যায়। 
+
+                  ১৫ আগস্ট জাতির...</p>
+                <p class="flex gap-2 py-2 items-center text-xs text-gray-500"><span><i
+                      class="fa fa-regular fa-clock"></i></span><span>৩ ঘণ্টা আগে </span></p>
+              </a>
+            </div>
+          </div>
+          <div class="flex items-center bg-white shadow-md gap-3 rounded-md ">
+            <img class="w-1/3 rounded-l-md"
+              src="https://www.kalbela.com/assets/news_photos/2023/08/16/image-15630-1692198517.jpg"
+              alt="">
+            <div class="text-area ">
+              <a href="#">
+                <h4 class="text-xl font-semibold text-gray-900 hover:text-blue-500 my-2">বাংলাদেশ শিল্পকলা একাডেমির আয়োজনে ’কবিতা ও গানে বঙ্গবন্ধু’ অনুষ্ঠিত
+                </h4>
+                <p>বাংলাদেশ শিল্পকলা একাডেমির আয়োজনে শোকাবহ আগস্টে মাসব্যাপী কমর্সূচি পালন করছে একাডেমি। ১৯৭৫ সালের ১৫ আগস্ট জাতির পিতা বঙ্গবন্ধু শেখ মুজিবুর রহমানকে সপরিবারে হত্যার ঘটনা ইতিহাসের এক কলঙ্কজনক অধ্যায়। 
+
+                  ১৫ আগস্ট জাতির...</p>
+                <p class="flex gap-2 py-2 items-center text-xs text-gray-500"><span><i
+                      class="fa fa-regular fa-clock"></i></span><span>৩ ঘণ্টা আগে </span></p>
+              </a>
+            </div>
+          </div>
+          <div class="flex items-center bg-white shadow-md gap-3 rounded-md ">
+            <img class="w-1/3 rounded-l-md"
+              src="https://www.kalbela.com/assets/news_photos/2023/08/16/image-15630-1692198517.jpg"
+              alt="">
+            <div class="text-area ">
+              <a href="#">
+                <h4 class="text-xl font-semibold text-gray-900 hover:text-blue-500 my-2">বাংলাদেশ শিল্পকলা একাডেমির আয়োজনে ’কবিতা ও গানে বঙ্গবন্ধু’ অনুষ্ঠিত
+                </h4>
+                <p>বাংলাদেশ শিল্পকলা একাডেমির আয়োজনে শোকাবহ আগস্টে মাসব্যাপী কমর্সূচি পালন করছে একাডেমি। ১৯৭৫ সালের ১৫ আগস্ট জাতির পিতা বঙ্গবন্ধু শেখ মুজিবুর রহমানকে সপরিবারে হত্যার ঘটনা ইতিহাসের এক কলঙ্কজনক অধ্যায়। 
+
+                  ১৫ আগস্ট জাতির...</p>
+                <p class="flex gap-2 py-2 items-center text-xs text-gray-500"><span><i
+                      class="fa fa-regular fa-clock"></i></span><span>৩ ঘণ্টা আগে </span></p>
+              </a>
+            </div>
+          </div>
+          <div class="flex items-center bg-white shadow-md gap-3 rounded-md ">
+            <img class="w-1/3 rounded-l-md"
+              src="https://www.kalbela.com/assets/news_photos/2023/08/16/image-15630-1692198517.jpg"
+              alt="">
+            <div class="text-area ">
+              <a href="#">
+                <h4 class="text-xl font-semibold text-gray-900 hover:text-blue-500 my-2">বাংলাদেশ শিল্পকলা একাডেমির আয়োজনে ’কবিতা ও গানে বঙ্গবন্ধু’ অনুষ্ঠিত
+                </h4>
+                <p>বাংলাদেশ শিল্পকলা একাডেমির আয়োজনে শোকাবহ আগস্টে মাসব্যাপী কমর্সূচি পালন করছে একাডেমি। ১৯৭৫ সালের ১৫ আগস্ট জাতির পিতা বঙ্গবন্ধু শেখ মুজিবুর রহমানকে সপরিবারে হত্যার ঘটনা ইতিহাসের এক কলঙ্কজনক অধ্যায়। 
+
+                  ১৫ আগস্ট জাতির...</p>
+                <p class="flex gap-2 py-2 items-center text-xs text-gray-500"><span><i
+                      class="fa fa-regular fa-clock"></i></span><span>৩ ঘণ্টা আগে </span></p>
+              </a>
+            </div>
+          </div>
+          <div class="flex items-center bg-white shadow-md gap-3 rounded-md ">
+            <img class="w-1/3 rounded-l-md"
+              src="https://www.kalbela.com/assets/news_photos/2023/08/16/image-15630-1692198517.jpg"
+              alt="">
+            <div class="text-area ">
+              <a href="#">
+                <h4 class="text-xl font-semibold text-gray-900 hover:text-blue-500 my-2">বাংলাদেশ শিল্পকলা একাডেমির আয়োজনে ’কবিতা ও গানে বঙ্গবন্ধু’ অনুষ্ঠিত
+                </h4>
+                <p>বাংলাদেশ শিল্পকলা একাডেমির আয়োজনে শোকাবহ আগস্টে মাসব্যাপী কমর্সূচি পালন করছে একাডেমি। ১৯৭৫ সালের ১৫ আগস্ট জাতির পিতা বঙ্গবন্ধু শেখ মুজিবুর রহমানকে সপরিবারে হত্যার ঘটনা ইতিহাসের এক কলঙ্কজনক অধ্যায়। 
+
+                  ১৫ আগস্ট জাতির...</p>
+                <p class="flex gap-2 py-2 items-center text-xs text-gray-500"><span><i
+                      class="fa fa-regular fa-clock"></i></span><span>৩ ঘণ্টা আগে </span></p>
+              </a>
+            </div>
+          </div>
+          <div class="flex items-center bg-white shadow-md gap-3 rounded-md ">
+            <img class="w-1/3 rounded-l-md"
+              src="https://www.kalbela.com/assets/news_photos/2023/08/16/image-15630-1692198517.jpg"
+              alt="">
+            <div class="text-area ">
+              <a href="#">
+                <h4 class="text-xl font-semibold text-gray-900 hover:text-blue-500 my-2">বাংলাদেশ শিল্পকলা একাডেমির আয়োজনে ’কবিতা ও গানে বঙ্গবন্ধু’ অনুষ্ঠিত
+                </h4>
+                <p>বাংলাদেশ শিল্পকলা একাডেমির আয়োজনে শোকাবহ আগস্টে মাসব্যাপী কমর্সূচি পালন করছে একাডেমি। ১৯৭৫ সালের ১৫ আগস্ট জাতির পিতা বঙ্গবন্ধু শেখ মুজিবুর রহমানকে সপরিবারে হত্যার ঘটনা ইতিহাসের এক কলঙ্কজনক অধ্যায়। 
+
+                  ১৫ আগস্ট জাতির...</p>
+                <p class="flex gap-2 py-2 items-center text-xs text-gray-500"><span><i
+                      class="fa fa-regular fa-clock"></i></span><span>৩ ঘণ্টা আগে </span></p>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="flex items-center justify-center w-full lg:py-8">
+          <button class="btn btn-primary btn-outline btn-sm rounded-md ">আরও</button>
+        </div>
+       </div>
+       <!-- aside section  -->
+        <div class="lg:col-span-2">
+          <div class="flex flex-col gap-4">
+            <div class="p-3  bg-white rounded-md shadow-md">
+              <img class="w-full" src="https://www.kalbela.com/assets/news_photos/2023/08/12/image-14707-1691853616.jpg"
+                alt="">
+              <h3 class="mt-3 font-semibold text-xl hover:text-blue-500"> জিয়া জীবিত থাকলে বঙ্গবন্ধু হত্যায় তার দণ্ড
+                হতো : মেয়র তাপস
+              </h3>
+              <p class="text-sm py-2 text-gray-600 text-justify">বাংলাদেশ শিল্পকলা একাডেমির আয়োজনে শোকাবহ আগস্টে মাসব্যাপী কমর্সূচি পালন করছে একাডেমি। ১৯৭৫ সালের ১৫ আগস্ট জাতির পিতা বঙ্গবন্ধু শেখ মুজিবুর রহমানকে সপরিবারে হত্যার ঘটনা ইতিহাসের এক কলঙ্কজনক অধ্যায়। ১৫ আগস্ট জাতির...</p>
+              <p class="flex gap-2 pt-2 items-center text-xs text-gray-500"><span><i
+                    class="fa fa-regular fa-clock"></i></span><span>৮ মিনিট আগে</span></p>
+            </div>
+            <div class="p-3  bg-white rounded-md shadow-md">
+              <img class="w-full" src="https://www.kalbela.com/assets/news_photos/2023/08/12/image-14707-1691853616.jpg"
+                alt="">
+              <h3 class="mt-3 font-semibold text-xl hover:text-blue-500"> জিয়া জীবিত থাকলে বঙ্গবন্ধু হত্যায় তার দণ্ড
+                হতো : মেয়র তাপস
+              </h3>
+              <p class="text-sm py-2 text-gray-600 text-justify">বাংলাদেশ শিল্পকলা একাডেমির আয়োজনে শোকাবহ আগস্টে মাসব্যাপী কমর্সূচি পালন করছে একাডেমি। ১৯৭৫ সালের ১৫ আগস্ট জাতির পিতা বঙ্গবন্ধু শেখ মুজিবুর রহমানকে সপরিবারে হত্যার ঘটনা ইতিহাসের এক কলঙ্কজনক অধ্যায়। ১৫ আগস্ট জাতির...</p>
+              <p class="flex gap-2 pt-2 items-center text-xs text-gray-500"><span><i
+                    class="fa fa-regular fa-clock"></i></span><span>৮ মিনিট আগে</span></p>
+            </div>
+            <div class="p-3  bg-white rounded-md shadow-md">
+              <img class="w-full" src="https://www.kalbela.com/assets/news_photos/2023/08/12/image-14707-1691853616.jpg"
+                alt="">
+              <h3 class="mt-3 font-semibold text-xl hover:text-blue-500"> জিয়া জীবিত থাকলে বঙ্গবন্ধু হত্যায় তার দণ্ড
+                হতো : মেয়র তাপস
+              </h3>
+              <p class="text-sm py-2 text-gray-600 text-justify">বাংলাদেশ শিল্পকলা একাডেমির আয়োজনে শোকাবহ আগস্টে মাসব্যাপী কমর্সূচি পালন করছে একাডেমি। ১৯৭৫ সালের ১৫ আগস্ট জাতির পিতা বঙ্গবন্ধু শেখ মুজিবুর রহমানকে সপরিবারে হত্যার ঘটনা ইতিহাসের এক কলঙ্কজনক অধ্যায়। ১৫ আগস্ট জাতির...</p>
+              <p class="flex gap-2 pt-2 items-center text-xs text-gray-500"><span><i
+                    class="fa fa-regular fa-clock"></i></span><span>৮ মিনিট আগে</span></p>
+            </div>
+            <div class="p-3  bg-white rounded-md shadow-md">
+              <img class="w-full" src="https://www.kalbela.com/assets/news_photos/2023/08/12/image-14707-1691853616.jpg"
+                alt="">
+              <h3 class="mt-3 font-semibold text-xl hover:text-blue-500"> জিয়া জীবিত থাকলে বঙ্গবন্ধু হত্যায় তার দণ্ড
+                হতো : মেয়র তাপস
+              </h3>
+              <p class="text-sm py-2 text-gray-600 text-justify">বাংলাদেশ শিল্পকলা একাডেমির আয়োজনে শোকাবহ আগস্টে মাসব্যাপী কমর্সূচি পালন করছে একাডেমি। ১৯৭৫ সালের ১৫ আগস্ট জাতির পিতা বঙ্গবন্ধু শেখ মুজিবুর রহমানকে সপরিবারে হত্যার ঘটনা ইতিহাসের এক কলঙ্কজনক অধ্যায়। ১৫ আগস্ট জাতির...</p>
+              <p class="flex gap-2 pt-2 items-center text-xs text-gray-500"><span><i
+                    class="fa fa-regular fa-clock"></i></span><span>৮ মিনিট আগে</span></p>
+            </div>
+             
+          </div>
+          <div class="flex items-center justify-center w-full lg:py-8">
+            <button class="btn btn-primary btn-outline btn-sm rounded-md ">আরও</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- --------------------------------
+       Footer section here 
+    ---------------------------------->
+  <footer>
+    <div class='main-foote mt-11 bg-[#000000d4] text-white'>
+      <div class='common-width'>
+        <footer class="footer text-base-content py-3 pt-10 shadow-xl md:shadow-none text-white">
+          <div class='grid w-full  grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-3 md:gap-6 md:gap-y-8 sm:gap-y-8'>
+            <div class='flex justify-center md:items-start items-center flex-col w-full'>
+              <img class='w-full p-5  mb-2' src="./images/logo.jpeg" alt="" />
+              <p class='text-center md:text-start text-white'>Call with Remote Talks<br />Providing reliable tech since
+                2022</p>
+            </div>
+            <div class='flex md:items-start items-center w-full flex-col gap-2'>
+              <span class="footer-title">Services</span>
+              <div class='grid grid-cols-2 sm:grid-cols-4 md:grid-cols-1 gap-x-2 md:gap-1'>
+                <a to="/meeting" class="link link-hover">Video Call</a>
+                <a to="/meeting" class="link link-hover">Audio Call</a>
+                <a to="/message" class="link link-hover">Live Chat</a>
+                <a to="/participants" class="link link-hover">Add Friend</a>
+                <a to="/message" class="link link-hover">Live Streaming</a>
+              </div>
+            </div>
+            <div class='flex md:items-start items-center  w-full flex-col gap-2'>
+              <span class="footer-title">Company</span>
+              <div class='flex md:flex-col  gap-3 md:gap-1'>
+                <a to="/about" class="link link-hover">About us</a>
+                <a to="/contact" class="link link-hover">Contact</a>
+                <a to="/review" class="link link-hover">Review</a>
+                <a class="link link-hover">Collaboration</a>
+                <a to="/" class="link link-hover">Return home</a>
+              </div>
+            </div>
+            <div class='flex md:items-start items-center w-full flex-col gap-1'>
+              <span class="footer-title">Our Team</span>
+              <div class=''>
+                <div class='flex items-center gap-1'>
+                  <span class='text-lg text-blue-400'>
+                    <FaCode></FaCode>
+                  </span>
+                  <a href="https://grsagor-portfolio.web.app/" target="blank" class="link link-hover">G.R. Sagor</a>
+                </div>
+                <div class='flex items-center gap-1'>
+                  <span class='text-lg text-blue-500'>
+                    <FaCode></FaCode>
+                  </span>
+                  <a href="https://portfolio-88a84.web.app/" target="blank" class="link link-hover">Nusrat Nova</a>
+                </div>
+                <div class='flex items-center gap-1'>
+                  <span class='text-lg text-blue-500'>
+                    <FaCode></FaCode>
+                  </span>
+                  <a href="https://transcendent-syrniki-78a004.netlify.app/" target="blank"
+                    class="link link-hover">Sharmin Akter</a>
+                </div>
+                <div class='flex items-center gap-1'>
+                  <span class='text-lg text-blue-600'>
+                    <FaCode></FaCode>
+                  </span>
+                  <a href="https://sina-porfolio.web.app/" target="blank" class="link link-hover">Md Anis Molla</a>
+                </div>
+                <div class='flex items-center gap-1'>
+                  <span class='text-lg text-blue-700'>
+                    <FaCode></FaCode>
+                  </span>
+                  <a href="https://mahmudul-protfolio.netlify.app/" target="blank" class="link link-hover">Ft Sobuj
+                    Hasan</a>
+                </div>
+                <div class='flex items-center gap-1'>
+                  <span class='text-lg text-blue-800'>
+                    <FaCode></FaCode>
+                  </span>
+                  <a href="https://md-shimul-molla-07.netlify.app/" target="blank" class="link link-hover">Md Shimul
+                    Molla</a>
+                </div>
+              </div>
+
+            </div>
+            <div class='w-full flex flex-col md:items-start items-center '>
+              <span class="footer-title">Connect Us</span>
+              <div>
+                <div class="form-control w-full">
+                  <label class="label">
+                    <span class="label-text text-white">Enter your email address</span>
+                  </label>
+                  <div class="relative">
+                    <input type="text" placeholder="username@site.com" class="input input-bordered w-full pr-16"
+                      required />
+                    <button onClick={handleConnect}
+                      class="btn btn-primary bg-gradient-to-r from-primary to-blue-800 text-white absolute top-0 right-0 rounded-l-none">Send</button>
+                  </div>
+                </div>
+                <div class="grid grid-flow-col w-full pt-4 gap-4">
+                  <a href='https://twitter.com/' target="blank"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                      height="24" viewBox="0 0 24 24" class="fill-current">
+                      <path
+                        d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z">
+                      </path>
+                    </svg></a>
+                  <a href='https://www.youtube.com/' target="blank"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                      height="24" viewBox="0 0 24 24" class="fill-current">
+                      <path
+                        d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z">
+                      </path>
+                    </svg></a>
+                  <a href='https://www.facebook.com/' target="blank"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                      height="24" viewBox="0 0 24 24" class="fill-current">
+                      <path
+                        d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z">
+                      </path>
+                    </svg></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </footer>
+
+      </div>
+      <div class='border-t-2 mt-4'>
+        <span class='text-center text-gray-300 block py-5'>© Copyright 2023 Morning Time</span>
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <script src="./app.js"></script>
+
+</body>
+
+</html>

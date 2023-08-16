@@ -10,9 +10,9 @@
   <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
   <link rel="stylesheet" href="./style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
-  <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
 
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
 <body>
@@ -79,19 +79,19 @@
   <nav class="shadow hidden lg:block">
     <div class="main-navbar">
       <ul>
-        <li><a><i class="fas fa-heart" style="color: red; font-size: 24px;"></i></i></a></li>
-        <li><a>সর্বশেষ</a></li>
-        <li><a>জাতীয়</a></li>
-        <li><a href="./rajniti.html">রাজনীতি</a></li>
-        <li><a>সারাদেশ</a></li>
-        <li><a>বিশ্ব</a></li>
-        <li><a>বিনোদন</a></li>
-        <li><a>খেলা</a></li>
-        <li><a>বাণিজ্য</a></li>
-        <li><a>চাকরি</a></li>
-        <li><a>মতামত</a></li>
-        <li><a>ভিডিও</a></li>
-        <li><a>অডিও</a></li>
+        <li><a  href="./index.html" class="text-blue-500"><i class="fa-solid fa-house"></i></a></li>
+        <li><a href="./LatestNewsPage.html"><img class="w-3 mr-1 mb-1 rounded-full" src="https://www.kalbela.com/assets/verified_icon/menu/country-news.png?v=1" alt="">সর্বশেষ</a></li>
+        <li><a href="./nationalNewsPage.html"><img class="w-3 mr-1 mb-1 rounded-full" src="https://www.kalbela.com/assets/verified_icon/menu/country-news.png?v=1" alt="">জাতীয়</a></li>
+        <li><a href="./rajniti.html"><img class="w-3 mr-1 mb-1 rounded-full" src="https://www.kalbela.com/assets/verified_icon/menu/country-news.png?v=1" alt="">রাজনীতি</a></li>
+        <li><a><img class="w-3 mr-1 mb-1 rounded-full" src="https://www.kalbela.com/assets/verified_icon/menu/country-news.png?v=1" alt="">সারাদেশ</a></li>
+        <li><a><img class="w-3 mr-1 mb-1 rounded-full" src="https://www.kalbela.com/assets/verified_icon/menu/country-news.png?v=1" alt="">বিশ্ব</a></li>
+        <li><a><img class="w-3 mr-1 mb-1 rounded-full" src="https://www.kalbela.com/assets/verified_icon/menu/country-news.png?v=1" alt="">বিনোদন</a></li>
+        <li><a><img class="w-3 mr-1 mb-1 rounded-full" src="https://www.kalbela.com/assets/verified_icon/menu/country-news.png?v=1" alt="">খেলা</a></li>
+        <li><a><img class="w-3 mr-1 mb-1 rounded-full" src="https://www.kalbela.com/assets/verified_icon/menu/country-news.png?v=1" alt="">বাণিজ্য</a></li>
+        <li><a><img class="w-3 mr-1 mb-1 rounded-full" src="https://www.kalbela.com/assets/verified_icon/menu/country-news.png?v=1" alt="">চাকরি</a></li>
+        <li><a><img class="w-3 mr-1 mb-1 rounded-full" src="https://www.kalbela.com/assets/verified_icon/menu/country-news.png?v=1" alt="">মতামত</a></li>
+        <li><a><img class="w-3 mr-1 mb-1 rounded-full" src="https://www.kalbela.com/assets/verified_icon/menu/country-news.png?v=1" alt="">ভিডিও</a></li>
+        <li><a><img class="w-3 mr-1 mb-1 rounded-full" src="https://www.kalbela.com/assets/verified_icon/menu/country-news.png?v=1" alt="">অডিও</a></li>
         <li><a><i class="fa fa-solid fa-bars"></i></a></li>
       </ul>
     </div>
@@ -193,7 +193,7 @@
                 src="https://www.kalbela.com/assets/news_photos/2023/08/11/image-14286.jpg" alt="">
               <h2 class="text-xl font-semibold hover:text-blue-500 my-3">সংকটেও বেড়েছে কোটিপতি </h2>
             </div>
-            <div class="bottom-cards">
+            <div class="bottom-cards flex flex-col gap-5">
               <div class="single-card gap-3 py-2 ">
                 <img class="w-24" src="https://www.kalbela.com/assets/news_photos/2023/08/11/image-14312-1691736564.jpg"
                   alt="">
@@ -270,121 +270,133 @@
       </div>
     </div>
   </section>
-  <!-- Video section code start here  -->
-  <section class="video-section py-6">
-    <div class="common-width  rounded-md">
-      <div class="rounded-md ">
-        <div class="video-top gap-2 mb-2">
-          <span class="text-xl font-semibold flex items-center pag-3"><img class="w-10 rounded-full"
-              src="./images/video-icon.png" alt=""> ভিডিও</span>
-          <span class="text-sm font-semibold hover:text-blue-500 flex items-center pag-3">সব ভিডিও </span>
+     <!-- --------------------------------
+       In Countries News section here 
+    ---------------------------------->
+    <section class="my-8">
+      <div class="common-width grid grid-cols-1 lg:grid-cols-8 gap-3">
+        <div class="lg:col-span-6">
+          <div class="rounded-md p-3">
+            <div class="selective-top">
+              <span class="text-xl font-semibold flex items-center gap-3"><img class="w-6 rounded-full" src="https://www.kalbela.com/assets/verified_icon/menu/country-news.png?v=1" alt=""> সারাদেশ</span>
+              <span class="text-sm font-semibold hover:text-blue-500 flex items-center cursor-pointer gap-3"><i
+                  class="fa fa-solid fa-arrow-right text-xl border rounded-full w-6 h-6"></i></span>
+            </div>
+            <div class="">
+              <div class=" border-r grid grid-cols-1 md:gird-cols-2 lg:grid-cols-4 gap-3">
+                <a href="#">
+                  <div class="card_ p-2 border-r">
+                    <img class="w-full"
+                      src="	https://www.kalbela.com/assets/news_photos/2023/08/15/image-15385-1692100674.jpg" alt="">
+                    <h2 class="pt-2 text-sm font-semibold hover:text-blue-500"> নিবন্ধন পেয়ে স্মৃতিসৌধ ও শহীদ মিনারে
+                      সুপ্রিম পার্টির শ্রদ্ধা </h2>
+                  </div>
+                </a>
+                <a href="#">
+                  <div class="card_ p-2 border-r">
+                    <img class="w-full"
+                      src="	https://www.kalbela.com/assets/news_photos/2023/08/15/image-15381-1692099886.jpg" alt="">
+                    <h2 class="pt-2 text-sm font-semibold hover:text-blue-500"> নিবন্ধন পেয়ে স্মৃতিসৌধ ও শহীদ মিনারে
+                      সুপ্রিম পার্টির শ্রদ্ধা </h2>
+                  </div>
+                </a>
+                <a href="#">
+                  <div class="card_ p-2">
+                    <img class="w-full"
+                      src="	https://www.kalbela.com/assets/news_photos/2023/08/15/image-15361-1692093633.jpg" alt="">
+                    <h2 class="pt-2 text-sm font-semibold hover:text-blue-500"> নিবন্ধন পেয়ে স্মৃতিসৌধ ও শহীদ মিনারে
+                      সুপ্রিম পার্টির শ্রদ্ধা </h2>
+                  </div>
+                </a>
+                <a href="#">
+                  <div class="card_ p-2 border-r">
+                    <img class="w-full"
+                      src="https://www.kalbela.com/assets/news_photos/2023/08/15/image-15368-1692096994.jpg" alt="">
+                    <h2 class="pt-2 text-sm font-semibold hover:text-blue-500"> নিবন্ধন পেয়ে স্মৃতিসৌধ ও শহীদ মিনারে
+                      সুপ্রিম পার্টির শ্রদ্ধা </h2>
+                  </div>
+                </a>
+                <a href="#">
+                  <div class="card_ p-2 border-r">
+                    <img class="w-full"
+                      src="	https://www.kalbela.com/assets/news_photos/2023/08/15/image-15359-1692093341.jpg" alt="">
+                    <h2 class="pt-2 text-sm font-semibold hover:text-blue-500"> নিবন্ধন পেয়ে স্মৃতিসৌধ ও শহীদ মিনারে
+                      সুপ্রিম পার্টির শ্রদ্ধা </h2>
+                  </div>
+                </a>
+                <a href="#">
+                  <div class="card_ p-2">
+                    <img class="w-full"
+                      src="https://www.kalbela.com/assets/news_photos/2023/08/15/image-15374-1692098328.jpg" alt="">
+                    <h2 class="pt-2 text-sm font-semibold hover:text-blue-500"> নিবন্ধন পেয়ে স্মৃতিসৌধ ও শহীদ মিনারে
+                      সুপ্রিম পার্টির শ্রদ্ধা </h2>
+                  </div>
+                </a>
+                <a href="#">
+                  <div class="card_ p-2">
+                    <img class="w-full"
+                      src="https://www.kalbela.com/assets/news_photos/2023/08/15/image-15380-1692099861.jpg" alt="">
+                    <h2 class="pt-2 text-sm font-semibold hover:text-blue-500"> নিবন্ধন পেয়ে স্মৃতিসৌধ ও শহীদ মিনারে
+                      সুপ্রিম পার্টির শ্রদ্ধা </h2>
+                  </div>
+                </a>
+                <a href="#">
+                  <div class="card_ p-2">
+                    <img class="w-full"
+                      src="https://www.kalbela.com/assets/news_photos/2023/08/12/image-14696-1691849028.jpg" alt="">
+                    <h2 class="pt-2 text-sm font-semibold hover:text-blue-500"> নিবন্ধন পেয়ে স্মৃতিসৌধ ও শহীদ মিনারে
+                      সুপ্রিম পার্টির শ্রদ্ধা </h2>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="video-container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-5">
-          <!-- video card  -->
-          <div class="single-video  cursor-pointer">
-            <div class="video">
-              <div class="video-icon-s text-white">
-                <svg xmlns="http://www.w3.org/2000/svg" height="1em"
-                  viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
-                  <path
-                    d="M464 256A208 208 0 1 0 48 256a208 208 0 1 0 416 0zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zM188.3 147.1c7.6-4.2 16.8-4.1 24.3 .5l144 88c7.1 4.4 11.5 12.1 11.5 20.5s-4.4 16.1-11.5 20.5l-144 88c-7.4 4.5-16.7 4.7-24.3 .5s-12.3-12.2-12.3-20.9V168c0-8.7 4.7-16.7 12.3-20.9z" />
-                </svg>
-              </div>
-              <img class="w-full rounded-t-md"
-                src="https://www.kalbela.com/assets/video_cover_photos/2023/08/11/cover_photo-437.jpg" alt="">
-            </div>
-            <div class="video-title p-3 ">
-              <h3 class="text-sm font-semibold hover:text-blue-500">রেগে নেতাকর্মীদের মঞ্চ থেকে নামিয়ে দিলেন মির্জা
-                ফখরুল</h3>
-              <p class="flex gap-2 py-4 items-center text-xs text-gray-500"><span><i
-                    class="fa fa-regular fa-clock"></i></span><span>৪ ঘণ্টা আগে</span></p>
-            </div>
-          </div>
-          <!-- video card  -->
-          <div class="single-video  cursor-pointer">
-            <div class="video">
-              <div class="video-icon-s text-white">
-                <svg xmlns="http://www.w3.org/2000/svg" height="1em"
-                  viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
-                  <path
-                    d="M464 256A208 208 0 1 0 48 256a208 208 0 1 0 416 0zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zM188.3 147.1c7.6-4.2 16.8-4.1 24.3 .5l144 88c7.1 4.4 11.5 12.1 11.5 20.5s-4.4 16.1-11.5 20.5l-144 88c-7.4 4.5-16.7 4.7-24.3 .5s-12.3-12.2-12.3-20.9V168c0-8.7 4.7-16.7 12.3-20.9z" />
-                </svg>
-              </div>
-              <img class="w-full rounded-t-md"
-                src="https://www.kalbela.com/assets/video_cover_photos/2023/08/11/cover_photo-437.jpg" alt="">
-            </div>
-            <div class="video-title p-3 ">
-              <h3 class="text-sm font-semibold hover:text-blue-500">রেগে নেতাকর্মীদের মঞ্চ থেকে নামিয়ে দিলেন মির্জা
-                ফখরুল</h3>
-              <p class="flex gap-2 py-4 items-center text-xs text-gray-500"><span><i
-                    class="fa fa-regular fa-clock"></i></span><span>৪ ঘণ্টা আগে</span></p>
-            </div>
-          </div>
-          <!-- video card  -->
-          <div class="single-video  cursor-pointer">
-            <div class="video">
-              <div class="video-icon-s text-white">
-                <svg xmlns="http://www.w3.org/2000/svg" height="1em"
-                  viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
-                  <path
-                    d="M464 256A208 208 0 1 0 48 256a208 208 0 1 0 416 0zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zM188.3 147.1c7.6-4.2 16.8-4.1 24.3 .5l144 88c7.1 4.4 11.5 12.1 11.5 20.5s-4.4 16.1-11.5 20.5l-144 88c-7.4 4.5-16.7 4.7-24.3 .5s-12.3-12.2-12.3-20.9V168c0-8.7 4.7-16.7 12.3-20.9z" />
-                </svg>
-              </div>
-              <img class="w-full rounded-t-md"
-                src="https://www.kalbela.com/assets/video_cover_photos/2023/08/11/cover_photo-437.jpg" alt="">
-            </div>
-            <div class="video-title p-3 ">
-              <h3 class="text-sm font-semibold hover:text-blue-500">রেগে নেতাকর্মীদের মঞ্চ থেকে নামিয়ে দিলেন মির্জা
-                ফখরুল</h3>
-              <p class="flex gap-2 py-4 items-center text-xs text-gray-500"><span><i
-                    class="fa fa-regular fa-clock"></i></span><span>৪ ঘণ্টা আগে</span></p>
+        <aside class="lg:col-span-2">
+          <div class="p-7 shadow-md rounded-lg lg:mt-16 bg-white">
+            <h2 class="font-semibold text-lg text-black my-6 select-area-border pl-4">আমার এলাকার সংবাদ</h2>
+            <div class="flex flex-col gap-3">
+              <select class="select w-full select-sm bg-blue-50">
+                <option selected>বিভাগ</option>
+                <option>ঢাকা</option>
+                <option>চট্টগ্রাম </option>
+                <option>রাজশাহী </option>
+                <option>খুলনা </option>
+                <option>সিলেট </option>
+                <option>বরিশাল </option>
+                <option>রংপুর </option>
+                <option>ময়মনসিংহ </option>
+              </select>
+  
+              <select class="select bg-blue-50 w-full select-sm">
+                <option selected> জেলা</option>
+                <option> টাঙ্গাইল</option>
+                <option> গাজীপুর</option>
+                <option>মানিকগঞ্জ</option>
+                <option>ঢাকা</option>
+                <option>রাজবাড়</option>
+                <option>মাদারীপুর</option>
+                <option>গোপালগঞ্জ</option>
+              </select>
+              <select class="select bg-blue-50 w-full select-sm">
+                <option selected>উপজেলা</option>
+                <option>ঢাকা উত্তর</option>
+                <option>ঢাকা দক্ষিণ </option>
+                <option>ধামরাই উপজেলা</option>
+                <option>সাভার উপজেলা</option>
+                <option>দোহার উপজেলা</option>
+                <option>নবাবগঞ্জ উপজেলা</option>
+                <option>কেরানীগঞ্জ উপজেলা</option>
+              </select>
+              <button
+                class="btn btn-primary btn-sm flex items-center justify-center gap-3 my-4 dist_news_srch"><span>অনুসন্ধান</span>
+                <i class="fa-solid fa-magnifying-glass"></i></button>
             </div>
           </div>
-          <!-- video card  -->
-          <div class="single-video  cursor-pointer">
-            <div class="video">
-              <div class="video-icon-s text-white">
-                <svg xmlns="http://www.w3.org/2000/svg" height="1em"
-                  viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
-                  <path
-                    d="M464 256A208 208 0 1 0 48 256a208 208 0 1 0 416 0zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zM188.3 147.1c7.6-4.2 16.8-4.1 24.3 .5l144 88c7.1 4.4 11.5 12.1 11.5 20.5s-4.4 16.1-11.5 20.5l-144 88c-7.4 4.5-16.7 4.7-24.3 .5s-12.3-12.2-12.3-20.9V168c0-8.7 4.7-16.7 12.3-20.9z" />
-                </svg>
-              </div>
-              <img class="w-full rounded-t-md"
-                src="https://www.kalbela.com/assets/video_cover_photos/2023/08/11/cover_photo-437.jpg" alt="">
-            </div>
-            <div class="video-title p-3 ">
-              <h3 class="text-sm font-semibold hover:text-blue-500">রেগে নেতাকর্মীদের মঞ্চ থেকে নামিয়ে দিলেন মির্জা
-                ফখরুল</h3>
-              <p class="flex gap-2 py-4 items-center text-xs text-gray-500"><span><i
-                    class="fa fa-regular fa-clock"></i></span><span>৪ ঘণ্টা আগে</span></p>
-            </div>
-          </div>
-          <!-- video card  -->
-          <div class="single-video  cursor-pointer">
-            <div class="video">
-              <div class="video-icon-s text-white">
-                <svg xmlns="http://www.w3.org/2000/svg" height="1em"
-                  viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
-                  <path
-                    d="M464 256A208 208 0 1 0 48 256a208 208 0 1 0 416 0zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zM188.3 147.1c7.6-4.2 16.8-4.1 24.3 .5l144 88c7.1 4.4 11.5 12.1 11.5 20.5s-4.4 16.1-11.5 20.5l-144 88c-7.4 4.5-16.7 4.7-24.3 .5s-12.3-12.2-12.3-20.9V168c0-8.7 4.7-16.7 12.3-20.9z" />
-                </svg>
-              </div>
-              <img class="w-full rounded-t-md"
-                src="https://www.kalbela.com/assets/video_cover_photos/2023/08/11/cover_photo-437.jpg" alt="">
-            </div>
-            <div class="video-title p-3 ">
-              <h3 class="text-sm font-semibold hover:text-blue-500">রেগে নেতাকর্মীদের মঞ্চ থেকে নামিয়ে দিলেন মির্জা
-                ফখরুল</h3>
-              <p class="flex gap-2 py-4 items-center text-xs text-gray-500"><span><i
-                    class="fa fa-regular fa-clock"></i></span><span>৪ ঘণ্টা আগে</span></p>
-            </div>
-          </div>
-
-        </div>
+        </aside>
       </div>
-    </div>
-  </section>
+    </section>
+
   <!-- --------------------------------
        Online Count section here 
     ---------------------------------->
@@ -469,19 +481,20 @@
             <div class="option flex flex-col ">
               <div class="form-control">
                 <label class="cursor-pointer label gap-3 items-center">
-                  <input type="checkbox" checked="checked" class="checkbox  checkbox-sm checkbox-info" />
-                  <span class="label-text w-full px-5 border rounded-3xl vot_box">হ্যাঁ</span>
+                  <input type="radio" name="radio-7" class="radio redio-sm radio-info" checked />
+                  <span class="label-text w-full px-5 border rounded-3xl vot_box relative">হ্যাঁ</span>
+                  <!-- <span class="label-text w-2/3 rounded-r-none border-none px-5  bg-blue-200 rounded-3xl vot_box">66%</span> -->
                 </label>
               </div>
               <div class="form-control">
                 <label class="cursor-pointer label gap-3 items-center">
-                  <input type="checkbox" class="checkbox  checkbox-sm checkbox-info" />
+                  <input type="radio" name="radio-7" class="radio redio-sm radio-info"  />
                   <span class="label-text w-full px-5 border rounded-3xl vot_box">না </span>
                 </label>
               </div>
               <div class="form-control">
                 <label class="cursor-pointer label gap-3 items-center">
-                  <input type="checkbox" class="checkbox  checkbox-sm checkbox-info" />
+                  <input type="radio" name="radio-7" class="radio radio-info"  />
                   <span class="label-text w-full px-5 border rounded-3xl vot_box">মন্তব্য নেই</span>
                 </label>
               </div>
@@ -596,6 +609,206 @@
       </div>
     </div>
   </section>
+    <!-- Video section code start here  -->
+    <section class="video-section py-6">
+      <div class="common-width  rounded-md">
+        <div class="rounded-md ">
+          <div class="video-top gap-2 mb-2">
+            <span class="text-xl font-semibold flex items-center pag-3"><img class="w-10 rounded-full"
+                src="./images/video-icon.png" alt=""> ভিডিও</span>
+            <span class="text-sm font-semibold hover:text-blue-500 flex items-center pag-3">সব ভিডিও </span>
+          </div>
+          <div class="video-container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-5">
+            <!-- video card  -->
+            <div class="single-video  cursor-pointer">
+              <div class="video">
+                <div class="video-icon-s text-white">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="1em"
+                    viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                    <path
+                      d="M464 256A208 208 0 1 0 48 256a208 208 0 1 0 416 0zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zM188.3 147.1c7.6-4.2 16.8-4.1 24.3 .5l144 88c7.1 4.4 11.5 12.1 11.5 20.5s-4.4 16.1-11.5 20.5l-144 88c-7.4 4.5-16.7 4.7-24.3 .5s-12.3-12.2-12.3-20.9V168c0-8.7 4.7-16.7 12.3-20.9z" />
+                  </svg>
+                </div>
+                <img class="w-full rounded-t-md"
+                  src="https://www.kalbela.com/assets/video_cover_photos/2023/08/11/cover_photo-437.jpg" alt="">
+              </div>
+              <div class="video-title p-3 ">
+                <h3 class="text-sm font-semibold hover:text-blue-500">রেগে নেতাকর্মীদের মঞ্চ থেকে নামিয়ে দিলেন মির্জা
+                  ফখরুল</h3>
+                <p class="flex gap-2 py-4 items-center text-xs text-gray-500"><span><i
+                      class="fa fa-regular fa-clock"></i></span><span>৪ ঘণ্টা আগে</span></p>
+              </div>
+            </div>
+            <!-- video card  -->
+            <div class="single-video  cursor-pointer">
+              <div class="video">
+                <div class="video-icon-s text-white">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="1em"
+                    viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                    <path
+                      d="M464 256A208 208 0 1 0 48 256a208 208 0 1 0 416 0zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zM188.3 147.1c7.6-4.2 16.8-4.1 24.3 .5l144 88c7.1 4.4 11.5 12.1 11.5 20.5s-4.4 16.1-11.5 20.5l-144 88c-7.4 4.5-16.7 4.7-24.3 .5s-12.3-12.2-12.3-20.9V168c0-8.7 4.7-16.7 12.3-20.9z" />
+                  </svg>
+                </div>
+                <img class="w-full rounded-t-md"
+                  src="https://www.kalbela.com/assets/video_cover_photos/2023/08/11/cover_photo-437.jpg" alt="">
+              </div>
+              <div class="video-title p-3 ">
+                <h3 class="text-sm font-semibold hover:text-blue-500">রেগে নেতাকর্মীদের মঞ্চ থেকে নামিয়ে দিলেন মির্জা
+                  ফখরুল</h3>
+                <p class="flex gap-2 py-4 items-center text-xs text-gray-500"><span><i
+                      class="fa fa-regular fa-clock"></i></span><span>৪ ঘণ্টা আগে</span></p>
+              </div>
+            </div>
+            <!-- video card  -->
+            <div class="single-video  cursor-pointer">
+              <div class="video">
+                <div class="video-icon-s text-white">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="1em"
+                    viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                    <path
+                      d="M464 256A208 208 0 1 0 48 256a208 208 0 1 0 416 0zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zM188.3 147.1c7.6-4.2 16.8-4.1 24.3 .5l144 88c7.1 4.4 11.5 12.1 11.5 20.5s-4.4 16.1-11.5 20.5l-144 88c-7.4 4.5-16.7 4.7-24.3 .5s-12.3-12.2-12.3-20.9V168c0-8.7 4.7-16.7 12.3-20.9z" />
+                  </svg>
+                </div>
+                <img class="w-full rounded-t-md"
+                  src="https://www.kalbela.com/assets/video_cover_photos/2023/08/11/cover_photo-437.jpg" alt="">
+              </div>
+              <div class="video-title p-3 ">
+                <h3 class="text-sm font-semibold hover:text-blue-500">রেগে নেতাকর্মীদের মঞ্চ থেকে নামিয়ে দিলেন মির্জা
+                  ফখরুল</h3>
+                <p class="flex gap-2 py-4 items-center text-xs text-gray-500"><span><i
+                      class="fa fa-regular fa-clock"></i></span><span>৪ ঘণ্টা আগে</span></p>
+              </div>
+            </div>
+            <!-- video card  -->
+            <div class="single-video  cursor-pointer">
+              <div class="video">
+                <div class="video-icon-s text-white">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="1em"
+                    viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                    <path
+                      d="M464 256A208 208 0 1 0 48 256a208 208 0 1 0 416 0zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zM188.3 147.1c7.6-4.2 16.8-4.1 24.3 .5l144 88c7.1 4.4 11.5 12.1 11.5 20.5s-4.4 16.1-11.5 20.5l-144 88c-7.4 4.5-16.7 4.7-24.3 .5s-12.3-12.2-12.3-20.9V168c0-8.7 4.7-16.7 12.3-20.9z" />
+                  </svg>
+                </div>
+                <img class="w-full rounded-t-md"
+                  src="https://www.kalbela.com/assets/video_cover_photos/2023/08/11/cover_photo-437.jpg" alt="">
+              </div>
+              <div class="video-title p-3 ">
+                <h3 class="text-sm font-semibold hover:text-blue-500">রেগে নেতাকর্মীদের মঞ্চ থেকে নামিয়ে দিলেন মির্জা
+                  ফখরুল</h3>
+                <p class="flex gap-2 py-4 items-center text-xs text-gray-500"><span><i
+                      class="fa fa-regular fa-clock"></i></span><span>৪ ঘণ্টা আগে</span></p>
+              </div>
+            </div>
+            <!-- video card  -->
+            <div class="single-video  cursor-pointer">
+              <div class="video">
+                <div class="video-icon-s text-white">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="1em"
+                    viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                    <path
+                      d="M464 256A208 208 0 1 0 48 256a208 208 0 1 0 416 0zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zM188.3 147.1c7.6-4.2 16.8-4.1 24.3 .5l144 88c7.1 4.4 11.5 12.1 11.5 20.5s-4.4 16.1-11.5 20.5l-144 88c-7.4 4.5-16.7 4.7-24.3 .5s-12.3-12.2-12.3-20.9V168c0-8.7 4.7-16.7 12.3-20.9z" />
+                  </svg>
+                </div>
+                <img class="w-full rounded-t-md"
+                  src="https://www.kalbela.com/assets/video_cover_photos/2023/08/11/cover_photo-437.jpg" alt="">
+              </div>
+              <div class="video-title p-3 ">
+                <h3 class="text-sm font-semibold hover:text-blue-500">রেগে নেতাকর্মীদের মঞ্চ থেকে নামিয়ে দিলেন মির্জা
+                  ফখরুল</h3>
+                <p class="flex gap-2 py-4 items-center text-xs text-gray-500"><span><i
+                      class="fa fa-regular fa-clock"></i></span><span>৪ ঘণ্টা আগে</span></p>
+              </div>
+            </div>
+  
+          </div>
+        </div>
+      </div>
+    </section>
+  
+  <!-- --------------------------------
+   This Extra Section for Problem solving
+    ---------------------------------->
+    <section class="my-8 hidden">
+      <div class="common-width grid grid-cols-1 lg:grid-cols-8 gap-3">
+        <div class="lg:col-span-6">
+          <div class="rounded-md p-3">
+            <div class="selective-top">
+              <span class="text-xl font-semibold flex items-center gap-3"><img class="w-6 rounded-full"
+                  src="https://www.kalbela.com/assets/verified_icon/menu/politics.png?v=1" alt=""> রাজনীতি</span>
+              <span class="text-sm font-semibold hover:text-blue-500 flex items-center cursor-pointer gap-3"><i
+                  class="fa fa-solid fa-arrow-right text-xl border rounded-full w-6 h-6"></i></span>
+            </div>
+            <div class="video-container grid grid-cols-1  lg:grid-cols-6 gap-3">
+              <div class="p-3 lg:col-span-2 border-r">
+                <img class="w-full rounded-t-md"
+                  src="https://www.kalbela.com/assets/news_photos/2023/08/12/image-14707-1691853616.jpg" alt="">
+                <h3 class="mt-3 font-semibold text-xl hover:text-blue-500"> জিয়া জীবিত থাকলে বঙ্গবন্ধু হত্যায় তার দণ্ড
+                  হতো : মেয়র তাপস
+                </h3>
+                <p class="text-sm py-2 text-gray-600 text-justify">জিয়াউর রহমান জীবিত থাকলে তাকে জাতির পিতা বঙ্গবন্ধু শেখ
+                  মুজিবুর রহমান ও তার পরিবারের সদস্যদেরকে হত্যা করার জন্য অবশ্যই দণ্ড দেওয়া ..</p>
+                <p class="flex gap-2 py-4 items-center text-xs text-gray-500"><span><i
+                      class="fa fa-regular fa-clock"></i></span><span>৮ মিনিট আগে</span></p>
+              </div>
+              <div class=" border-r lg:col-span-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+                <a href="#">
+                  <div class="card_ p-2 border-r">
+                    <img class="w-full"
+                      src="https://www.kalbela.com/assets/news_photos/2023/08/12/image-14696-1691849028.jpg" alt="">
+                    <h2 class="pt-2 text-sm font-semibold hover:text-blue-500"> নিবন্ধন পেয়ে স্মৃতিসৌধ ও শহীদ মিনারে
+                      সুপ্রিম পার্টির শ্রদ্ধা </h2>
+                  </div>
+                </a>
+                <a href="#">
+                  <div class="card_ p-2 border-r">
+                    <img class="w-full"
+                      src="https://www.kalbela.com/assets/news_photos/2023/08/12/image-14696-1691849028.jpg" alt="">
+                    <h2 class="pt-2 text-sm font-semibold hover:text-blue-500"> নিবন্ধন পেয়ে স্মৃতিসৌধ ও শহীদ মিনারে
+                      সুপ্রিম পার্টির শ্রদ্ধা </h2>
+                  </div>
+                </a>
+                <a href="#">
+                  <div class="card_ p-2">
+                    <img class="w-full"
+                      src="https://www.kalbela.com/assets/news_photos/2023/08/12/image-14696-1691849028.jpg" alt="">
+                    <h2 class="pt-2 text-sm font-semibold hover:text-blue-500"> নিবন্ধন পেয়ে স্মৃতিসৌধ ও শহীদ মিনারে
+                      সুপ্রিম পার্টির শ্রদ্ধা </h2>
+                  </div>
+                </a>
+                <a href="#">
+                  <div class="card_ p-2 border-r">
+                    <img class="w-full"
+                      src="https://www.kalbela.com/assets/news_photos/2023/08/12/image-14696-1691849028.jpg" alt="">
+                    <h2 class="pt-2 text-sm font-semibold hover:text-blue-500"> নিবন্ধন পেয়ে স্মৃতিসৌধ ও শহীদ মিনারে
+                      সুপ্রিম পার্টির শ্রদ্ধা </h2>
+                  </div>
+                </a>
+                <a href="#">
+                  <div class="card_ p-2 border-r">
+                    <img class="w-full"
+                      src="https://www.kalbela.com/assets/news_photos/2023/08/12/image-14696-1691849028.jpg" alt="">
+                    <h2 class="pt-2 text-sm font-semibold hover:text-blue-500"> নিবন্ধন পেয়ে স্মৃতিসৌধ ও শহীদ মিনারে
+                      সুপ্রিম পার্টির শ্রদ্ধা </h2>
+                  </div>
+                </a>
+                <a href="#">
+                  <div class="card_ p-2">
+                    <img class="w-full"
+                      src="https://www.kalbela.com/assets/news_photos/2023/08/12/image-14696-1691849028.jpg" alt="">
+                    <h2 class="pt-2 text-sm font-semibold hover:text-blue-500"> নিবন্ধন পেয়ে স্মৃতিসৌধ ও শহীদ মিনারে
+                      সুপ্রিম পার্টির শ্রদ্ধা </h2>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <aside class="lg:col-span-2">
+          aside section
+        </aside>
+      </div>
+    </section>
+
   <!-- --------------------------------
        Selective section here 
     ---------------------------------->
@@ -668,89 +881,6 @@
   </section>
 
   <!-- --------------------------------
-   This Extra Section for Problem solving
-    ---------------------------------->
-  <section class="my-8 hidden">
-    <div class="common-width grid grid-cols-1 lg:grid-cols-8 gap-3">
-      <div class="lg:col-span-6">
-        <div class="rounded-md p-3">
-          <div class="selective-top">
-            <span class="text-xl font-semibold flex items-center gap-3"><img class="w-6 rounded-full"
-                src="https://www.kalbela.com/assets/verified_icon/menu/politics.png?v=1" alt=""> রাজনীতি</span>
-            <span class="text-sm font-semibold hover:text-blue-500 flex items-center cursor-pointer gap-3"><i
-                class="fa fa-solid fa-arrow-right text-xl border rounded-full w-6 h-6"></i></span>
-          </div>
-          <div class="video-container grid grid-cols-1  lg:grid-cols-6 gap-3">
-            <div class="p-3 lg:col-span-2 border-r">
-              <img class="w-full rounded-t-md"
-                src="https://www.kalbela.com/assets/news_photos/2023/08/12/image-14707-1691853616.jpg" alt="">
-              <h3 class="mt-3 font-semibold text-xl hover:text-blue-500"> জিয়া জীবিত থাকলে বঙ্গবন্ধু হত্যায় তার দণ্ড
-                হতো : মেয়র তাপস
-              </h3>
-              <p class="text-sm py-2 text-gray-600 text-justify">জিয়াউর রহমান জীবিত থাকলে তাকে জাতির পিতা বঙ্গবন্ধু শেখ
-                মুজিবুর রহমান ও তার পরিবারের সদস্যদেরকে হত্যা করার জন্য অবশ্যই দণ্ড দেওয়া ..</p>
-              <p class="flex gap-2 py-4 items-center text-xs text-gray-500"><span><i
-                    class="fa fa-regular fa-clock"></i></span><span>৮ মিনিট আগে</span></p>
-            </div>
-            <div class=" border-r lg:col-span-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-              <a href="#">
-                <div class="card_ p-2 border-r">
-                  <img class="w-full"
-                    src="https://www.kalbela.com/assets/news_photos/2023/08/12/image-14696-1691849028.jpg" alt="">
-                  <h2 class="pt-2 text-sm font-semibold hover:text-blue-500"> নিবন্ধন পেয়ে স্মৃতিসৌধ ও শহীদ মিনারে
-                    সুপ্রিম পার্টির শ্রদ্ধা </h2>
-                </div>
-              </a>
-              <a href="#">
-                <div class="card_ p-2 border-r">
-                  <img class="w-full"
-                    src="https://www.kalbela.com/assets/news_photos/2023/08/12/image-14696-1691849028.jpg" alt="">
-                  <h2 class="pt-2 text-sm font-semibold hover:text-blue-500"> নিবন্ধন পেয়ে স্মৃতিসৌধ ও শহীদ মিনারে
-                    সুপ্রিম পার্টির শ্রদ্ধা </h2>
-                </div>
-              </a>
-              <a href="#">
-                <div class="card_ p-2">
-                  <img class="w-full"
-                    src="https://www.kalbela.com/assets/news_photos/2023/08/12/image-14696-1691849028.jpg" alt="">
-                  <h2 class="pt-2 text-sm font-semibold hover:text-blue-500"> নিবন্ধন পেয়ে স্মৃতিসৌধ ও শহীদ মিনারে
-                    সুপ্রিম পার্টির শ্রদ্ধা </h2>
-                </div>
-              </a>
-              <a href="#">
-                <div class="card_ p-2 border-r">
-                  <img class="w-full"
-                    src="https://www.kalbela.com/assets/news_photos/2023/08/12/image-14696-1691849028.jpg" alt="">
-                  <h2 class="pt-2 text-sm font-semibold hover:text-blue-500"> নিবন্ধন পেয়ে স্মৃতিসৌধ ও শহীদ মিনারে
-                    সুপ্রিম পার্টির শ্রদ্ধা </h2>
-                </div>
-              </a>
-              <a href="#">
-                <div class="card_ p-2 border-r">
-                  <img class="w-full"
-                    src="https://www.kalbela.com/assets/news_photos/2023/08/12/image-14696-1691849028.jpg" alt="">
-                  <h2 class="pt-2 text-sm font-semibold hover:text-blue-500"> নিবন্ধন পেয়ে স্মৃতিসৌধ ও শহীদ মিনারে
-                    সুপ্রিম পার্টির শ্রদ্ধা </h2>
-                </div>
-              </a>
-              <a href="#">
-                <div class="card_ p-2">
-                  <img class="w-full"
-                    src="https://www.kalbela.com/assets/news_photos/2023/08/12/image-14696-1691849028.jpg" alt="">
-                  <h2 class="pt-2 text-sm font-semibold hover:text-blue-500"> নিবন্ধন পেয়ে স্মৃতিসৌধ ও শহীদ মিনারে
-                    সুপ্রিম পার্টির শ্রদ্ধা </h2>
-                </div>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <aside class="lg:col-span-2">
-        aside section
-      </aside>
-    </div>
-  </section>
-  <!-- --------------------------------
        National News section here 
     ---------------------------------->
   <section class="my-8">
@@ -776,7 +906,7 @@
               <p class="flex gap-2 py-4 items-center text-xs text-gray-500"><span><i
                     class="fa fa-regular fa-clock"></i></span><span>৩৭ মিনিট আগে </span></p>
             </div>
-            <div class="">
+            <div class="flex flex-col gap-3">
               <div class="single-card gap-3 mt-0 py-2 ">
                 <img class="w-24" src="https://www.kalbela.com/assets/news_photos/2023/08/12/image-14649-1691837550.jpg"
                   alt="">
@@ -830,7 +960,7 @@
                 </div>
               </div>
             </div>
-            <div class="flex flex-col gap-2">
+            <div class="flex flex-col gap-3">
               <div class="single-card gap-3 mt-0 py-2 ">
                 <div class="text-area">
                   <a href="#">
@@ -1065,133 +1195,7 @@
       </aside>
     </div>
   </section>
-  <!-- --------------------------------
-       In Countries News section here 
-    ---------------------------------->
-  <section class="my-8">
-    <div class="common-width grid grid-cols-1 lg:grid-cols-8 gap-3">
-      <div class="lg:col-span-6">
-        <div class="rounded-md p-3">
-          <div class="selective-top">
-            <span class="text-xl font-semibold flex items-center gap-3"><img class="w-6 rounded-full"
-                src="https://www.kalbela.com/assets/verified_icon/menu/country-news.png?v=1" alt=""> সারাদেশ</span>
-            <span class="text-sm font-semibold hover:text-blue-500 flex items-center cursor-pointer gap-3"><i
-                class="fa fa-solid fa-arrow-right text-xl border rounded-full w-6 h-6"></i></span>
-          </div>
-          <div class="">
-            <div class=" border-r grid grid-cols-1 md:gird-cols-2 lg:grid-cols-4 gap-3">
-              <a href="#">
-                <div class="card_ p-2 border-r">
-                  <img class="w-full"
-                    src="	https://www.kalbela.com/assets/news_photos/2023/08/15/image-15385-1692100674.jpg" alt="">
-                  <h2 class="pt-2 text-sm font-semibold hover:text-blue-500"> নিবন্ধন পেয়ে স্মৃতিসৌধ ও শহীদ মিনারে
-                    সুপ্রিম পার্টির শ্রদ্ধা </h2>
-                </div>
-              </a>
-              <a href="#">
-                <div class="card_ p-2 border-r">
-                  <img class="w-full"
-                    src="	https://www.kalbela.com/assets/news_photos/2023/08/15/image-15381-1692099886.jpg" alt="">
-                  <h2 class="pt-2 text-sm font-semibold hover:text-blue-500"> নিবন্ধন পেয়ে স্মৃতিসৌধ ও শহীদ মিনারে
-                    সুপ্রিম পার্টির শ্রদ্ধা </h2>
-                </div>
-              </a>
-              <a href="#">
-                <div class="card_ p-2">
-                  <img class="w-full"
-                    src="	https://www.kalbela.com/assets/news_photos/2023/08/15/image-15361-1692093633.jpg" alt="">
-                  <h2 class="pt-2 text-sm font-semibold hover:text-blue-500"> নিবন্ধন পেয়ে স্মৃতিসৌধ ও শহীদ মিনারে
-                    সুপ্রিম পার্টির শ্রদ্ধা </h2>
-                </div>
-              </a>
-              <a href="#">
-                <div class="card_ p-2 border-r">
-                  <img class="w-full"
-                    src="https://www.kalbela.com/assets/news_photos/2023/08/15/image-15368-1692096994.jpg" alt="">
-                  <h2 class="pt-2 text-sm font-semibold hover:text-blue-500"> নিবন্ধন পেয়ে স্মৃতিসৌধ ও শহীদ মিনারে
-                    সুপ্রিম পার্টির শ্রদ্ধা </h2>
-                </div>
-              </a>
-              <a href="#">
-                <div class="card_ p-2 border-r">
-                  <img class="w-full"
-                    src="	https://www.kalbela.com/assets/news_photos/2023/08/15/image-15359-1692093341.jpg" alt="">
-                  <h2 class="pt-2 text-sm font-semibold hover:text-blue-500"> নিবন্ধন পেয়ে স্মৃতিসৌধ ও শহীদ মিনারে
-                    সুপ্রিম পার্টির শ্রদ্ধা </h2>
-                </div>
-              </a>
-              <a href="#">
-                <div class="card_ p-2">
-                  <img class="w-full"
-                    src="https://www.kalbela.com/assets/news_photos/2023/08/15/image-15374-1692098328.jpg" alt="">
-                  <h2 class="pt-2 text-sm font-semibold hover:text-blue-500"> নিবন্ধন পেয়ে স্মৃতিসৌধ ও শহীদ মিনারে
-                    সুপ্রিম পার্টির শ্রদ্ধা </h2>
-                </div>
-              </a>
-              <a href="#">
-                <div class="card_ p-2">
-                  <img class="w-full"
-                    src="https://www.kalbela.com/assets/news_photos/2023/08/15/image-15380-1692099861.jpg" alt="">
-                  <h2 class="pt-2 text-sm font-semibold hover:text-blue-500"> নিবন্ধন পেয়ে স্মৃতিসৌধ ও শহীদ মিনারে
-                    সুপ্রিম পার্টির শ্রদ্ধা </h2>
-                </div>
-              </a>
-              <a href="#">
-                <div class="card_ p-2">
-                  <img class="w-full"
-                    src="https://www.kalbela.com/assets/news_photos/2023/08/12/image-14696-1691849028.jpg" alt="">
-                  <h2 class="pt-2 text-sm font-semibold hover:text-blue-500"> নিবন্ধন পেয়ে স্মৃতিসৌধ ও শহীদ মিনারে
-                    সুপ্রিম পার্টির শ্রদ্ধা </h2>
-                </div>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <aside class="lg:col-span-2">
-        <div class="p-7 shadow-md rounded-lg lg:mt-16 bg-white">
-          <h2 class="font-semibold text-lg text-black my-6 select-area-border pl-4">আমার এলাকার সংবাদ</h2>
-          <div class="flex flex-col gap-3">
-            <select class="select w-full select-sm bg-blue-50">
-              <option selected>বিভাগ</option>
-              <option>ঢাকা</option>
-              <option>চট্টগ্রাম </option>
-              <option>রাজশাহী </option>
-              <option>খুলনা </option>
-              <option>সিলেট </option>
-              <option>বরিশাল </option>
-              <option>রংপুর </option>
-              <option>ময়মনসিংহ </option>
-            </select>
-
-            <select class="select bg-blue-50 w-full select-sm">
-              <option selected> জেলা</option>
-              <option> টাঙ্গাইল</option>
-              <option> গাজীপুর</option>
-              <option>মানিকগঞ্জ</option>
-              <option>ঢাকা</option>
-              <option>রাজবাড়</option>
-              <option>মাদারীপুর</option>
-              <option>গোপালগঞ্জ</option>
-            </select>
-            <select class="select bg-blue-50 w-full select-sm">
-              <option selected>উপজেলা</option>
-              <option>ঢাকা উত্তর</option>
-              <option>ঢাকা দক্ষিণ </option>
-              <option>ধামরাই উপজেলা</option>
-              <option>সাভার উপজেলা</option>
-              <option>দোহার উপজেলা</option>
-              <option>নবাবগঞ্জ উপজেলা</option>
-              <option>কেরানীগঞ্জ উপজেলা</option>
-            </select>
-            <button
-              class="btn btn-primary btn-sm flex items-center justify-center gap-3 my-4 dist_news_srch"><span>অনুসন্ধান</span>
-              <i class="fa-solid fa-magnifying-glass"></i></button>
-          </div>
-        </div>
-      </aside>
-    </div>
-  </section>
+ 
   <!-- --------------------------------
        World News section here 
     ---------------------------------->
@@ -1828,42 +1832,10 @@
     </div>
   </footer>
 
-
-
-
-  <script>
-    let slideIndex = 1;
-    showSlides(slideIndex);
-
-    function plusSlides(n) {
-      showSlides(slideIndex += n);
-    }
-
-    function currentSlide(n) {
-      showSlides(slideIndex = n);
-    }
-
-    function showSlides(n) {
-      let i;
-      let slides = document.getElementsByClassName("mySlides");
-      let dots = document.getElementsByClassName("dot");
-      if (n > slides.length) { slideIndex = 1 }
-      if (n < 1) { slideIndex = slides.length }
-      for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-      }
-      for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-      }
-      slides[slideIndex - 1].style.display = "block";
-      dots[slideIndex - 1].className += " active";
-    }
-  </script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
   <script src="./app.js"></script>
   <script src="./calandar.js"></script>
-  <script src="https://cdn.tailwindcss.com"></script>
 
 </body>
 

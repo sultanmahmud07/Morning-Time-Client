@@ -93,6 +93,8 @@ a {
   border-bottom: 2px solid rgba(0, 76, 255, 0.896);
 }
 .main-navbar ul li a{
+  display: flex;
+  align-items: center;
   cursor: pointer;
  font-size: 13px;
  font-weight: 700;
@@ -132,7 +134,6 @@ a {
   background-color: white;
   display: flex;
   padding: 15px;
-  margin-top: 20px;
   border-radius: 8px;
   box-shadow:rgba(145, 158, 171, 0.2) 0px 0px 2px 0px,rgba(145, 158, 171, 0.12) 0px 12px 24px -4px ;
 
@@ -263,15 +264,9 @@ margin: auto;
   margin-bottom: 15px;
 }
 
-
-
-
-
-
-
-
-
-
+/*=========================================================
+     Calander card section css code here 
+ =========================================================*/
 .top_calander{
   margin: 10px;
   
@@ -553,18 +548,9 @@ cursor: pointer;
   font-size: 18px !important;
 }
 
-
-
-
-
-
-
-
-/* * {box-sizing: border-box}
-body {font-family: Verdana, sans-serif; margin:0}
-.mySlides {display: none}
-img {vertical-align: middle;} */
-
+/*=========================================================
+   Photo Galary section css code here 
+ =========================================================*/
 /* Slideshow container */
 .slideshow-container {
   max-width: 1000px;
@@ -650,3 +636,10 @@ img {vertical-align: middle;} */
 @media only screen and (max-width: 300px) {
   .prev, .next,.text {font-size: 11px}
 }
+
+/*=========================================================
+    Nation section css code here 
+ =========================================================*/
+ .nation_news_card_title_bg{
+  background: linear-gradient(rgba(0, 0, 0, 0), black);
+ }
