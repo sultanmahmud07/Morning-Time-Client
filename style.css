@@ -161,9 +161,9 @@ box-shadow: rgba(145, 158, 171, 0.2) 0px 0px 2px 0px,rgba(64, 64, 65, 0.12) 0px 
   align-items: center;
   justify-content: center;
  }
- .video-icon-s svg{
+ .video-icon-s i{
 color: white;
-font-size: 30px;
+font-size: 35px;
  }
  .video-top{
   display: flex;
@@ -643,3 +643,65 @@ cursor: pointer;
  .nation_news_card_title_bg{
   background: linear-gradient(rgba(0, 0, 0, 0), black);
  }
+ .country-sub-manu{
+  
+ }
+ .country-sub-manu ul li{
+border-right: 2px solid gray;
+ }
+ .country-sub-manu ul li a{
+padding: 0px 10px;
+font-weight: bold;
+ }
+ .country-sub-manu ul li a:hover{
+color: blue;
+ }
+
+
+
+
+
+
+
+
+
+ .slider-container {
+  overflow: hidden;
+  width: 100%;
+}
+
+.slider {
+  display: flex;
+  transition: transform 0.3s ease-in-out;
+}
+
+.slider-item {
+  position: relative;
+  flex: 0 0 100%; /* Each item takes 100% width of the container */
+  /* padding: 1rem; */
+  /* text-align: center; */
+  /* background-color: #f0f0f0; */
+  /* border: 1px solid #ccc; */
+}
+
+.slider-indicators {
+  position: absolute;
+  bottom: 7px;
+  left: 50%;
+display: flex;
+justify-content: center;
+margin-top: 1rem;
+}
+
+.indicator {
+width: 5px;
+height: 5px;
+margin: 0 0.5rem;
+background-color: #ccc;
+border-radius: 50%;
+cursor: pointer;
+}
+
+.indicator.active {
+background-color: #333;
+}

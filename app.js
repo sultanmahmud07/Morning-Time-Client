@@ -1,3 +1,54 @@
+const slider = document.querySelector('.slider');
+    const sliderItems = document.querySelectorAll('.slider-item');
+    const prevButton = document.querySelector('#prevButton');
+    const nextButton = document.querySelector('#nextButton');
+    let currentIndex = 0;
+
+    function slide(direction) {
+      if (direction === 'prev') {
+        currentIndex = (currentIndex - 1 + sliderItems.length) % sliderItems.length;
+      } else if (direction === 'next') {
+        currentIndex = (currentIndex + 1) % sliderItems.length;
+      }
+      const translateX = -currentIndex * 100; // Translate by 100% for each slide
+      slider.style.transform = `translateX(${translateX}%)`;
+    }
+
+    prevButton.addEventListener('click', () => slide('prev'));
+    nextButton.addEventListener('click', () => slide('next'));
+
+    const indicators = document.querySelectorAll('.indicator');
+
+    function updateIndicators() {
+      indicators.forEach((indicator, index) => {
+        if (index === currentIndex) {
+          indicator.classList.add('active');
+        } else {
+          indicator.classList.remove('active');
+        }
+      });
+    }
+
+    function autoSlide() {
+      slide('next');
+      updateIndicators();
+    }
+    let autoSlideInterval = setInterval(autoSlide, 2000); // Auto-slide every 1 second
+
+    // Pause auto-sliding when hovering over the slider
+    slider.addEventListener('mouseover', () => clearInterval(autoSlideInterval));
+    slider.addEventListener('mouseout', () => autoSlideInterval = setInterval(autoSlide, 2000));
+
+
+
+
+
+
+
+
+
+
+
 // tab function
 document.addEventListener("DOMContentLoaded", function () {
   // Set the first tab as active and show its content on page load
