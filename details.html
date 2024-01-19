@@ -4,23 +4,24 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Morning-Time</title>
+  <title>Morning-Times</title>
+  <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
   <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
   <link rel="stylesheet" href="font/Kalpurush.ttf" />
+  
+  <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="./style.css" />
 </head>
 
 <body>
-  <!-- -------------------------------------Detals Section Start-------------------------- -->
   <!-- Header section code start hare  -->
-  <header class="header py-2">
+  <header data-aos="zoom-in-down" class="header py-2">
     <div class="common-width grid grid-cols-1 md:grid-cols-2 gap-5">
-      <a href="./index.html">
-        <div class="logo mt-2">
-          <img class="" src="./images/logo.jpeg" alt="">
-        </div>
-      </a>
+      <div class="logo mt-2">
+        <img class="" src="./images/logo.jpeg" alt="">
+      </div>
       <div class="right-section ">
         <div class="select-city grid grid-cols-3 gap-2">
           <select class="select w-full select-sm">
@@ -75,22 +76,34 @@
     </div>
   </header>
   <!-- Navbar code start hare  -->
-  <nav class="shadow hidden lg:block">
+  <nav data-aos="zoom-i" class="shadow hidden lg:block">
     <div class="main-navbar">
       <ul>
-        <li><a  href="./index.html"><i class="fa-solid fa-house"></i></i></a></li>
-        <li><a>সর্বশেষ</a></li>
-        <li><a>জাতীয়</a></li>
-        <li><a>রাজনীতি</a></li>
-        <li><a>সারাদেশ</a></li>
-        <li><a>বিশ্ব</a></li>
-        <li><a>বিনোদন</a></li>
-        <li><a>খেলা</a></li>
-        <li><a>বাণিজ্য</a></li>
-        <li><a>চাকরি</a></li>
-        <li><a>মতামত</a></li>
-        <li><a>ভিডিও</a></li>
-        <li><a>অডিও</a></li>
+        <li><a href="./index.html"><i class="fa-solid fa-house"></i></a></li>
+        <li><a href="./LatestNewsPage.html"><img class="w-3 mr-1 mb-1 rounded-full"
+              src="https://www.kalbela.com/assets/verified_icon/menu/country-news.png?v=1" alt="">সর্বশেষ</a></li>
+        <li><a href="./nationalNewsPage.html"><img class="w-3 mr-1 mb-1 rounded-full"
+              src="https://www.kalbela.com/assets/verified_icon/menu/country-news.png?v=1" alt="">জাতীয়</a></li>
+        <li><a href="./rajniti.html"><img class="w-3 mr-1 mb-1 rounded-full"
+              src="https://www.kalbela.com/assets/verified_icon/menu/country-news.png?v=1" alt="">রাজনীতি</a></li>
+        <li><a href="./inCountry.html"><img class="w-3 mr-1 mb-1 rounded-full"
+              src="https://www.kalbela.com/assets/verified_icon/menu/country-news.png?v=1" alt="">সারাদেশ</a></li>
+        <li><a href="./worldNews.html"><img class="w-3 mr-1 mb-1 rounded-full"
+              src="https://www.kalbela.com/assets/verified_icon/menu/country-news.png?v=1" alt="">বিশ্ব</a></li>
+        <li><a><img class="w-3 mr-1 mb-1 rounded-full"
+              src="https://www.kalbela.com/assets/verified_icon/menu/country-news.png?v=1" alt="">বিনোদন</a></li>
+        <li><a><img class="w-3 mr-1 mb-1 rounded-full"
+              src="https://www.kalbela.com/assets/verified_icon/menu/country-news.png?v=1" alt="">খেলা</a></li>
+        <li><a><img class="w-3 mr-1 mb-1 rounded-full"
+              src="https://www.kalbela.com/assets/verified_icon/menu/country-news.png?v=1" alt="">বাণিজ্য</a></li>
+        <li><a><img class="w-3 mr-1 mb-1 rounded-full"
+              src="https://www.kalbela.com/assets/verified_icon/menu/country-news.png?v=1" alt="">চাকরি</a></li>
+        <li><a><img class="w-3 mr-1 mb-1 rounded-full"
+              src="https://www.kalbela.com/assets/verified_icon/menu/country-news.png?v=1" alt="">মতামত</a></li>
+        <li><a><img class="w-3 mr-1 mb-1 rounded-full"
+              src="https://www.kalbela.com/assets/verified_icon/menu/country-news.png?v=1" alt="">ভিডিও</a></li>
+        <li><a><img class="w-3 mr-1 mb-1 rounded-full"
+              src="https://www.kalbela.com/assets/verified_icon/menu/country-news.png?v=1" alt="">অডিও</a></li>
         <li><a><i class="fa fa-solid fa-bars"></i></a></li>
       </ul>
     </div>
@@ -98,590 +111,795 @@
   <section class="details-section-top container mx-auto ">
     <div class="grid grid-cols-12 gap-4">
       <!-- details-left-news start -->
-      <div class="details-left-news col-span-2">
-        <a href="#">
-          <span class="details-left-icon"><i class="fa-solid fa-house"></i></span>
-          / জাতীয়
-        </a>
-        <p>
-          <span class="details-left-icon"><i class="fa-solid fa-user"></i></span>কালবেলা প্রতিবেদক
-        </p>
-        <p>
-          <span class="details-left-icon"><i class="fa-solid fa-clock"></i></span>১২ আগস্ট ২০২৩, ০৯:৫৩ পিএম
-        </p>
-        <p>
-          <span class="details-left-icon"><i class="fa-solid fa-pen-to-square"></i></span>অনলাইন সংস্করণ
-        </p>
-        <div class="pt-5">
-          <hr />
-        </div>
+      <div class="mt-3 col-span-3">
+      <div class="bg-white rounded-md shadow-md p-4">
+        <h3 class="flex items-center text-xl font-semibold"> <a href="./index.html"><span class="details-left-icon"><i class="fa-solid fa-house"></i> / </span></a>
+          <span class="text-xl font-semibold text-blue-500">জাতীয়</span></h3>
+          <p class="flex items-start gap-1">
+            <span class="details-left-icon"><i class="fa-solid fa-user"></i></span><span>কালবেলা প্রতিবেদক</span>
+          </p>
+          <p class="flex items-start gap-1">
+            <span class="details-left-icon"><i class="fa-solid fa-clock"></i></span><span>১২ আগস্ট ২০২৩, ০৯:৫৩ পিএম</span>
+          </p>
+          <p class="flex items-start gap-1">
+            <span class="details-left-icon"><i class="fa-solid fa-pen-to-square"></i></span><span>অনলাইন সংস্করণ</span>
+          </p>
+      </div>
         <div class="left-small-bar-flex">
           <span class="left-small-bar"></span>
           <a href="#" class="font-semibold">এ সম্পর্কিত আরও খবর</a>
         </div>
-        <div class="pb-5">
-          <hr />
-        </div>
-
-        <div class="left-bottom-news border">
-          <a href="#" class="left-bottom-news-flex">
-            <div class="left-bottom-news-image-section">
-              <img src="images/details-left/left-section-image.jpg" alt="" />
+       <div class="flex flex-col gap-3">
+          <div data-aos="zoom-in-right" class="flex items-center bg-white shadow-md gap-3 rounded-md ">
+            <img class="w-36 rounded-l-md"
+              src="https://www.kalbela.com/assets/news_photos/2023/08/20/image-16648-1692536366.jpg"
+              alt="">
+            <div class="text-area ">
+              <a href="#">
+                <h4 class="text-sm font-semibold hover:text-blue-500 mt-2">ক্যারিয়ারের সেরা ছবির অপেক্ষায় আরিফিন শুভ
+                </h4>
+                <p class="flex gap-2 py-2 items-center text-xs text-gray-500"><span><i
+                      class="fa fa-regular fa-clock"></i></span><span>৩ ঘণ্টা আগে </span></p>
+              </a>
             </div>
-            <p class="left-bottom-news-des">
-              বঙ্গবন্ধুর খুনিদের পুনর্বাসন করে জাতির সঙ্গে বিশ্বাসঘাতকতা
-              করেছেন জিয়া : আইনমন্ত্রী
-            </p>
-          </a>
-          <a href="#" class="left-bottom-news-flex">
-            <div class="left-bottom-news-image-section">
-              <img src="images/details-left/left-section-image.jpg" alt="" />
+          </div>
+          <div data-aos="zoom-in-right" class="flex items-center bg-white shadow-md gap-3 rounded-md ">
+            <img class="w-36 rounded-l-md"
+              src="https://www.kalbela.com/assets/news_photos/2023/08/20/image-16648-1692536366.jpg"
+              alt="">
+            <div class="text-area ">
+              <a href="#">
+                <h4 class="text-sm font-semibold hover:text-blue-500 mt-2">ক্যারিয়ারের সেরা ছবির অপেক্ষায় আরিফিন শুভ
+                </h4>
+                <p class="flex gap-2 py-2 items-center text-xs text-gray-500"><span><i
+                      class="fa fa-regular fa-clock"></i></span><span>৩ ঘণ্টা আগে </span></p>
+              </a>
             </div>
-            <p class="left-bottom-news-des">
-              বঙ্গবন্ধুর খুনিদের পুনর্বাসন করে জাতির সঙ্গে বিশ্বাসঘাতকতা
-              করেছেন জিয়া : আইনমন্ত্রী
-            </p>
-          </a>
-          <a href="#" class="left-bottom-news-flex">
-            <div class="left-bottom-news-image-section">
-              <img src="images/details-left/left-section-image.jpg" alt="" />
+          </div>
+          <div data-aos="zoom-in-right" class="flex items-center bg-white shadow-md gap-3 rounded-md ">
+            <img class="w-36 rounded-l-md"
+              src="https://www.kalbela.com/assets/news_photos/2023/08/20/image-16648-1692536366.jpg"
+              alt="">
+            <div class="text-area ">
+              <a href="#">
+                <h4 class="text-sm font-semibold hover:text-blue-500 mt-2">ক্যারিয়ারের সেরা ছবির অপেক্ষায় আরিফিন শুভ
+                </h4>
+                <p class="flex gap-2 py-2 items-center text-xs text-gray-500"><span><i
+                      class="fa fa-regular fa-clock"></i></span><span>৩ ঘণ্টা আগে </span></p>
+              </a>
             </div>
-            <p class="left-bottom-news-des">
-              বঙ্গবন্ধুর খুনিদের পুনর্বাসন করে জাতির সঙ্গে বিশ্বাসঘাতকতা
-              করেছেন জিয়া : আইনমন্ত্রী
-            </p>
-          </a>
-          <a href="#" class="left-bottom-news-flex">
-            <div class="left-bottom-news-image-section">
-              <img src="images/details-left/left-section-image.jpg" alt="" />
+          </div>
+          <div data-aos="zoom-in-right" class="flex items-center bg-white shadow-md gap-3 rounded-md ">
+            <img class="w-36 rounded-l-md"
+              src="https://www.kalbela.com/assets/news_photos/2023/08/20/image-16648-1692536366.jpg"
+              alt="">
+            <div class="text-area ">
+              <a href="#">
+                <h4 class="text-sm font-semibold hover:text-blue-500 mt-2">ক্যারিয়ারের সেরা ছবির অপেক্ষায় আরিফিন শুভ
+                </h4>
+                <p class="flex gap-2 py-2 items-center text-xs text-gray-500"><span><i
+                      class="fa fa-regular fa-clock"></i></span><span>৩ ঘণ্টা আগে </span></p>
+              </a>
             </div>
-            <p class="left-bottom-news-des">
-              বঙ্গবন্ধুর খুনিদের পুনর্বাসন করে জাতির সঙ্গে বিশ্বাসঘাতকতা
-              করেছেন জিয়া : আইনমন্ত্রী
-            </p>
-          </a>
-          <a href="#" class="left-bottom-news-flex">
-            <div class="left-bottom-news-image-section">
-              <img src="images/details-left/left-section-image.jpg" alt="" />
+          </div>
+          <div data-aos="zoom-in-right" class="flex items-center bg-white shadow-md gap-3 rounded-md ">
+            <img class="w-36 rounded-l-md"
+              src="https://www.kalbela.com/assets/news_photos/2023/08/20/image-16648-1692536366.jpg"
+              alt="">
+            <div class="text-area ">
+              <a href="#">
+                <h4 class="text-sm font-semibold hover:text-blue-500 mt-2">ক্যারিয়ারের সেরা ছবির অপেক্ষায় আরিফিন শুভ
+                </h4>
+                <p class="flex gap-2 py-2 items-center text-xs text-gray-500"><span><i
+                      class="fa fa-regular fa-clock"></i></span><span>৩ ঘণ্টা আগে </span></p>
+              </a>
             </div>
-            <p class="left-bottom-news-des">
-              বঙ্গবন্ধুর খুনিদের পুনর্বাসন করে জাতির সঙ্গে বিশ্বাসঘাতকতা
-              করেছেন জিয়া : আইনমন্ত্রী
-            </p>
-          </a>
+          </div>
+          <div data-aos="zoom-in-right" class="flex items-center bg-white shadow-md gap-3 rounded-md ">
+            <img class="w-36 rounded-l-md"
+              src="https://www.kalbela.com/assets/news_photos/2023/08/20/image-16648-1692536366.jpg"
+              alt="">
+            <div class="text-area ">
+              <a href="#">
+                <h4 class="text-sm font-semibold hover:text-blue-500 mt-2">ক্যারিয়ারের সেরা ছবির অপেক্ষায় আরিফিন শুভ
+                </h4>
+                <p class="flex gap-2 py-2 items-center text-xs text-gray-500"><span><i
+                      class="fa fa-regular fa-clock"></i></span><span>৩ ঘণ্টা আগে </span></p>
+              </a>
+            </div>
+          </div>
         </div>
       </div>
       <!-- details-left-news end -->
-      <div class="details-middle-news col-span-7">
-        <div class="middle-top-title">
-          <h4 class="text-[#8e0006] font-semibold">
-            ‘মুজিব -একটি জাতির রূপকার’
-          </h4>
-        </div>
-
-        <div class="middle-middle-title py-5">
-          <h1 class="text-black font-semibold text-4xl">
-            বঙ্গবন্ধুকে নিয়ে চলচ্চিত্রটি ইতিহাসের দলিল হয়ে থাকবে :
-            তথ্যমন্ত্রী
-          </h1>
-        </div>
-
-        <div class="text-right details-top-icon">
-          <a class="details-top-icon-top-inner" href="#"><span class="facebook"><i
-                class="fa-brands fa-facebook-f"></i></span></a>
-          <a class="details-top-icon-top-inner" href="#"><span class="messenger"><i
-                class="fa-brands fa-facebook-messenger"></i></span></a>
-          <a class="details-top-icon-top-inner" href="#"><span class="whatsapp"><i
-                class="fa-brands fa-whatsapp"></i></span></a>
-          <a class="details-top-icon-top-inner" href="#"><span class="twitter"><i
-                class="fa-brands fa-twitter"></i></span></a>
-          <a class="details-top-icon-top-inner" href="#"><span class="linkedin"><i
-                class="fa-brands fa-linkedin"></i></span></a>
-          <a class="details-top-icon-top-inner" href="#"><span class="copy"><i class="fa-solid fa-copy"></i></span></a>
-          <a class="details-top-icon-top-inner" href="#"><span class="print"><i
-                class="fa-solid fa-print"></i></span></a>
-          <a class="details-top-icon-top-inner" href="#"><span class="o">অ-</span></a>
-          <a class="details-top-icon-top-inner" href="#"><span class="oo">অ+</span></a>
-        </div>
-
-        <div class="details-middle-image-section">
-          <div>
-            <img src="images/details-middle/middle-image.jpg" alt="" />
-            <p>
-              রাজধানীর হোটেল ইন্টারকন্টিনেন্টালে শনিবার বাংলাদেশ ও ভারত
-              সরকারের যৌথ প্রযোজনায় বঙ্গবন্ধুর জীবনের ওপর নির্মিত ‘মুজিব-একটি
-              জাতির রূপকার’ চলচ্চিত্রের সেন্সর সনদ হস্তান্তর অনুষ্ঠানে প্রধান
-              অতিথির বক্তব্য দেন তথ্যমন্ত্রী ড. হাছান মাহমুদ। ছবি : কালবেলা
-            </p>
+      <div class="details-middle-news col-span-6">
+        <div class=" bg-white p-4 mt-3 rounded-md shadow-md">
+          <!-- <div class="middle-top-title">
+            <h4 class="text-[#8e0006] font-semibold">
+              ‘মুজিব -একটি জাতির রূপকার’
+            </h4>
+          </div> -->
+  
+          <div class="middle-middle-title py-5 ">
+            <h1 class="text-black font-semibold text-3xl">
+              বঙ্গবন্ধুকে নিয়ে চলচ্চিত্রটি ইতিহাসের দলিল হয়ে থাকবে :
+              তথ্যমন্ত্রী
+            </h1>
           </div>
-          <hr />
-          <div class="middle-description-section">
-            <p>
-              জাতির পিতা বঙ্গবন্ধু শেখ মুজিবুর রহমানের জীবন ও একটি জাতির জন্ম
-              নিয়ে নির্মিত ‘মুজিব-একটি জাতির রূপকার’ এক নিঃশ্বাসে দেখার মতো
-              চলচ্চিত্র। এ অসাধারণ চলচ্চিত্রটি ইতিহাসের দলিল হয়ে থাকবে বলে
-              মন্তব্য করেছেন তথ্য ও সম্প্রচারমন্ত্রী, আওয়ামী লীগের যুগ্ম
-              সাধারণ সম্পাদক ড. হাছান মাহমুদ।
-            </p>
-
-            <iframe class="py-5 mx-auto" width="350" height="200" src="https://www.youtube.com/embed/Ln4XkwfZLoQ"
-              title="YouTube video player" frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen></iframe>
-
-            <p>
-              শনিবার (১২ আগস্ট) সন্ধ্যায় রাজধানীতে হোটেল ইন্টারকন্টিনেন্টালে
-              বাংলাদেশ ও ভারত সরকারের যৌথ প্রযোজনায় বঙ্গবন্ধুর জীবনের ওপর
-              নির্মিত ‘মুজিব-একটি জাতির রূপকার’ চলচ্চিত্রের সেন্সর সনদ
-              হস্তান্তর অনুষ্ঠানে প্রধান অতিথির বক্তৃতায় তিনি ওই কথা বলেন।
-            </p>
-            <p>
-              যারা বঙ্গবন্ধুকে জানতে চায়, বাঙালির মুক্তিসংগ্রামের ইতিহাস
-              জানতে চায়, এ চলচ্চিত্র তাদের অনেক কিছু দিতে পারবে উল্লেখ করে
-              সম্প্রচারমন্ত্রী বলেন, ‘তিন ঘণ্টা সময়ের মধ্যে বঙ্গবন্ধুর জীবন,
-              বাঙালির মুক্তিসংগ্রাম ও ১৯৭৫ সালের মর্মন্তুদ ঘটনাকে যেভাবে তুলে
-              আনা হয়েছে, সেখানেই চলচ্চিত্র পরিচালকের মুন্সিয়ানা, অন্য
-              পরিচালকের সঙ্গে পার্থক্য। থ্যাংকস টু শ্যাম বেনেগালজি।’
-            </p>
-
-            <p>
-              প্রধানমন্ত্রী শেখ হাসিনা তথ্য ও সম্প্রচার মন্ত্রণালয়ের দায়িত্ব
-              দেওয়ার ফলেই এ চলচ্চিত্র নির্মাণের শুরু থেকে মুক্তি পর্যন্ত
-              সঙ্গে থাকার সুযোগ হচ্ছে উল্লেখ করে হাছান মাহমুদ বলেন, ‘অবর্ণনীয়
-              ব্যস্ততার মধ্যেও এ চলচ্চিত্র নির্মাণে আন্তরিক সময় দানের জন্য
-              বঙ্গবন্ধুকন্যা প্রধানমন্ত্রীর প্রতি জানাই গভীর কৃতজ্ঞতা।
-              প্রধানমন্ত্রীর সঙ্গে আমার সিনেমাটি ইতোমধ্যে দেখার সৌভাগ্য
-              হয়েছে। এক নিঃশ্বাসে দেখার মতো এমন সিনেমা নির্মাণের জন্য পরিচালক
-              শ্যাম বেনেগাল ও শিল্পী, কলা-কুশলী ও নেপথ্য কারিগরদের আবারও
-              ধন্যবাদ।’
-            </p>
-            <div class="py-5">
-              <img src="images/add/nagad.gif" alt="add" />
+          <!-- icons  -->
+          <div class="text-right details-top-icon">
+            <a class="details-top-icon-top-inner" href="#"><span class="facebook"><i
+                  class="fa-brands fa-facebook-f"></i></span></a>
+            <a class="details-top-icon-top-inner" href="#"><span class="messenger"><i
+                  class="fa-brands fa-facebook-messenger"></i></span></a>
+            <a class="details-top-icon-top-inner" href="#"><span class="whatsapp"><i
+                  class="fa-brands fa-whatsapp"></i></span></a>
+            <a class="details-top-icon-top-inner" href="#"><span class="twitter"><i
+                  class="fa-brands fa-twitter"></i></span></a>
+            <a class="details-top-icon-top-inner" href="#"><span class="linkedin"><i
+                  class="fa-brands fa-linkedin"></i></span></a>
+            <a class="details-top-icon-top-inner" href="#"><span class="copy"><i class="fa-solid fa-copy"></i></span></a>
+            <a class="details-top-icon-top-inner" href="#"><span class="print"><i
+                  class="fa-solid fa-print"></i></span></a>
+            <a class="details-top-icon-top-inner" href="#"><span class="o">অ-</span></a>
+            <a class="details-top-icon-top-inner" href="#"><span class="oo">অ+</span></a>
+          </div>
+  
+          <div class="details-middle-image-section">
+            <div>
+              <img src="images/details-middle/middle-image.jpg" alt="" />
+              <p>
+                রাজধানীর হোটেল ইন্টারকন্টিনেন্টালে শনিবার বাংলাদেশ ও ভারত
+                সরকারের যৌথ প্রযোজনায় বঙ্গবন্ধুর জীবনের ওপর নির্মিত ‘মুজিব-একটি
+                জাতির রূপকার’ চলচ্চিত্রের সেন্সর সনদ হস্তান্তর অনুষ্ঠানে প্রধান
+                অতিথির বক্তব্য দেন তথ্যমন্ত্রী ড. হাছান মাহমুদ। ছবি : কালবেলা
+              </p>
             </div>
-            <p>
-              তথ্যসচিব হুমায়ুন কবীর তার বক্তব্যে বলেন, ‘দুই দেশের চলচ্চিত্র
-              দলের সমন্বয়ে যে ঐতিহাসিক চলচ্চিত্র নির্মিত হয়েছে, তা পারস্পরিক
-              সহযোগিতার অনন্য নজির।’ বঙ্গবন্ধু চরিত্রাভিনেতা আরিফিন শুভ বলেন,
-              ‘বঙ্গবন্ধুর চরিত্রে অভিনয়ের পর আর কোনো অভিনয় নাও করি বা যদি
-              পৃথিবী থেকে চলেও যেতে হয়, তাতেও কোনো আক্ষেপ নেই।’ স্ক্রিপ্ট
-              রাইটার ভারতের অতুল তেওয়ারি বলেন, ‘আমরা প্রধানমন্ত্রী শেখ
-              হাসিনার প্রতি কৃতজ্ঞ। তিনি তার বাবার জীবনের চলচ্চিত্র নির্মাণে
-              আমাদের ওপর বিশ্বাস ও আস্থা রেখেছেন।
-            </p>
-            <p>
-              আমরা ও শিল্পী-কুশলীরা এ নির্মাণকে সেরা করার সর্বোচ্চ চেষ্টা
-              করেছি।’ খন্দকার মোশতাক চরিত্র রূপায়নকারী অভিনেতা ফজলুর রহমান
-              বাবু বলেন, ‘এ খলচরিত্রে অভিনয়ের জন্য দর্শক যদি আমার দিকে জুতা
-              ছুঁড়ে মারে, তবে সেই হবে আমার পদক।’ মঞ্চে মন্ত্রীর উপস্থিতিতে
-              সেন্সর বোর্ডের চেয়ারম্যান তথ্য ও সম্প্রচার সচিব মো. হুমায়ুন
-              কবীর এবং ভাইস চেয়ারম্যান সাইফুল্লাহ গত ৩১ জুলাই ইস্যু করা
-              সেন্সর সনদটি চলচ্চিত্রের বাংলাদেশ পক্ষের প্রযোজক এফডিসির
-              ব্যবস্থাপনা পরিচালক নুজহাত ইয়াসমিন এবং ভারতের পক্ষে স্ক্রিপ্ট
-              রাইটার অতুল তেওয়ারির হাতে তুলে দেন। বাংলাদেশের ৬০ ভাগ ও ভারতের
-              ৪০ ভাগ ব্যয়ে নির্মিত এ বায়োপিকের শুটিং ২০২১ সালের ২২ জানুয়ারি
-              ভারতের মুম্বাই ফিল্ম সিটিতে শুরু হয়। ১৮ ডিসেম্বর বাংলাদেশে তা
-              শেষ হয়।
-            </p>
-            <p>
-              গত বছর ২০২২ সালের ১৭ মার্চ বঙ্গবন্ধুর জন্মবার্ষিকীতে
-              চলচ্চিত্রটির প্রথম পোস্টার, ৩ মে দ্বিতীয় পোস্টার এবং ১৯ মে
-              ফ্রান্সের কান চলচ্চিত্র উৎসবে সিনেমাটির ট্রেইলার রিলিজ করা হয়।
-              প্রধান তথ্য কমিশনার ড. আবদুল মালেক, সংস্কৃতি ব্যক্তিত্ব সাবেক
-              মন্ত্রী আসাদুজ্জামান নূর, বায়োপিকের অভিনিয়শিল্পীদের মধ্যে
-              বঙ্গবন্ধু চরিত্রাভিনেতা আরিফিন শুভ, বঙ্গমাতা চরিত্রাভিনেত্রী
-              নুসরাত ইমরোজ তিশা এবং দিলারা জামান, রাইসুল ইসলাম আসাদ, চঞ্চল
-              চৌধুরী, খায়রুল আলম সবুজ, ফজলুর রহমান বাবু, শহীদুল আলম সাচ্চু,
-              গাজী রাকায়েত, সংগীতা চৌধুরী, প্রার্থনা দিঘী, রিয়াজ আহমেদ,
-              সাব্বির আহমেদ, জায়েদ খান, সায়েম সামাদ, মোস্তাফিজুর রহমান,
-              হিমাদ্রি বড়ুয়া, স্ক্রিপ্ট রাইটার অতুল তেওয়ারি, সহযোগী পরিচালক
-              দয়াল নিহালানী, লাইন প্রডিউসার সতীশ শর্মা প্রমুখ অনুষ্ঠানে
-              উপস্থিত ছিলেন। ‘মুজিব-একটি জাতির রূপকার’ চলচ্চিত্রের শিল্পী,
-              কলা-কুশলী ছাড়াও আজীবন সম্মাননাপ্রাপ্ত অভিনেত্রী ডলি জহুর,
-              পরিচালক কাজী হায়াৎ, মুশফিকুর রহমান গুলজার, কামাল আহমেদ লিপু,
-              প্রযোজক-পরিবেশক খোরশেদ আলম খসরু, রহমতুল্লাহ, জ্যেষ্ঠ চিত্রগ্রাহক
-              আবদুল লতিফ বাচ্চু, সম্পাদক আবু মুসা দেবু, চলচ্চিত্র প্রদর্শক
-              উপদেষ্টা সুদীপ্ত দাস, প্রদর্শক আওলাদ হোসেন, দৈনিক কালবেলার
-              সম্পাদক ও প্রকাশক সন্তোষ শর্মা, আমির হামজা, চলচ্চিত্র সাংবাদিক
-              নেতা রিমন মাহফুজ, নাট্য পরিচালক কামরুজ্জামান সাগরসহ সিনেমা ও
-              শিল্প অঙ্গনের বিশিষ্টজনরা অনুষ্ঠানে অংশ নেন।
-            </p>
-            <div class="flex items-center details-bottom">
-              <div class="pe-5">
-                <img class="details-bottom-image" src="/images/details-bottom/1.jpg" alt="" />
+            <hr />
+            <div class="middle-description-section">
+              <p>
+                জাতির পিতা বঙ্গবন্ধু শেখ মুজিবুর রহমানের জীবন ও একটি জাতির জন্ম
+                নিয়ে নির্মিত ‘মুজিব-একটি জাতির রূপকার’ এক নিঃশ্বাসে দেখার মতো
+                চলচ্চিত্র। এ অসাধারণ চলচ্চিত্রটি ইতিহাসের দলিল হয়ে থাকবে বলে
+                মন্তব্য করেছেন তথ্য ও সম্প্রচারমন্ত্রী, আওয়ামী লীগের যুগ্ম
+                সাধারণ সম্পাদক ড. হাছান মাহমুদ।
+              </p>
+  
+              <iframe class="py-5 mx-auto" width="350" height="200" src="https://www.youtube.com/embed/Ln4XkwfZLoQ"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+  
+              <p>
+                শনিবার (১২ আগস্ট) সন্ধ্যায় রাজধানীতে হোটেল ইন্টারকন্টিনেন্টালে
+                বাংলাদেশ ও ভারত সরকারের যৌথ প্রযোজনায় বঙ্গবন্ধুর জীবনের ওপর
+                নির্মিত ‘মুজিব-একটি জাতির রূপকার’ চলচ্চিত্রের সেন্সর সনদ
+                হস্তান্তর অনুষ্ঠানে প্রধান অতিথির বক্তৃতায় তিনি ওই কথা বলেন।
+              </p>
+              <p>
+                যারা বঙ্গবন্ধুকে জানতে চায়, বাঙালির মুক্তিসংগ্রামের ইতিহাস
+                জানতে চায়, এ চলচ্চিত্র তাদের অনেক কিছু দিতে পারবে উল্লেখ করে
+                সম্প্রচারমন্ত্রী বলেন, ‘তিন ঘণ্টা সময়ের মধ্যে বঙ্গবন্ধুর জীবন,
+                বাঙালির মুক্তিসংগ্রাম ও ১৯৭৫ সালের মর্মন্তুদ ঘটনাকে যেভাবে তুলে
+                আনা হয়েছে, সেখানেই চলচ্চিত্র পরিচালকের মুন্সিয়ানা, অন্য
+                পরিচালকের সঙ্গে পার্থক্য। থ্যাংকস টু শ্যাম বেনেগালজি।’
+              </p>
+  
+              <p>
+                প্রধানমন্ত্রী শেখ হাসিনা তথ্য ও সম্প্রচার মন্ত্রণালয়ের দায়িত্ব
+                দেওয়ার ফলেই এ চলচ্চিত্র নির্মাণের শুরু থেকে মুক্তি পর্যন্ত
+                সঙ্গে থাকার সুযোগ হচ্ছে উল্লেখ করে হাছান মাহমুদ বলেন, ‘অবর্ণনীয়
+                ব্যস্ততার মধ্যেও এ চলচ্চিত্র নির্মাণে আন্তরিক সময় দানের জন্য
+                বঙ্গবন্ধুকন্যা প্রধানমন্ত্রীর প্রতি জানাই গভীর কৃতজ্ঞতা।
+                প্রধানমন্ত্রীর সঙ্গে আমার সিনেমাটি ইতোমধ্যে দেখার সৌভাগ্য
+                হয়েছে। এক নিঃশ্বাসে দেখার মতো এমন সিনেমা নির্মাণের জন্য পরিচালক
+                শ্যাম বেনেগাল ও শিল্পী, কলা-কুশলী ও নেপথ্য কারিগরদের আবারও
+                ধন্যবাদ।’
+              </p>
+              <div class="py-5">
+                <img src="images/add/nagad.gif" alt="add" />
               </div>
-
-              <div>
-                <a href="">সরকারের বিরুদ্ধে কংগ্রেসম্যানদের যা বলেছেন সেই শহিদুল
-                  আলম</a>
+              <p>
+                তথ্যসচিব হুমায়ুন কবীর তার বক্তব্যে বলেন, ‘দুই দেশের চলচ্চিত্র
+                দলের সমন্বয়ে যে ঐতিহাসিক চলচ্চিত্র নির্মিত হয়েছে, তা পারস্পরিক
+                সহযোগিতার অনন্য নজির।’ বঙ্গবন্ধু চরিত্রাভিনেতা আরিফিন শুভ বলেন,
+                ‘বঙ্গবন্ধুর চরিত্রে অভিনয়ের পর আর কোনো অভিনয় নাও করি বা যদি
+                পৃথিবী থেকে চলেও যেতে হয়, তাতেও কোনো আক্ষেপ নেই।’ স্ক্রিপ্ট
+                রাইটার ভারতের অতুল তেওয়ারি বলেন, ‘আমরা প্রধানমন্ত্রী শেখ
+                হাসিনার প্রতি কৃতজ্ঞ। তিনি তার বাবার জীবনের চলচ্চিত্র নির্মাণে
+                আমাদের ওপর বিশ্বাস ও আস্থা রেখেছেন।
+              </p>
+              <p>
+                আমরা ও শিল্পী-কুশলীরা এ নির্মাণকে সেরা করার সর্বোচ্চ চেষ্টা
+                করেছি।’ খন্দকার মোশতাক চরিত্র রূপায়নকারী অভিনেতা ফজলুর রহমান
+                বাবু বলেন, ‘এ খলচরিত্রে অভিনয়ের জন্য দর্শক যদি আমার দিকে জুতা
+                ছুঁড়ে মারে, তবে সেই হবে আমার পদক।’ মঞ্চে মন্ত্রীর উপস্থিতিতে
+                সেন্সর বোর্ডের চেয়ারম্যান তথ্য ও সম্প্রচার সচিব মো. হুমায়ুন
+                কবীর এবং ভাইস চেয়ারম্যান সাইফুল্লাহ গত ৩১ জুলাই ইস্যু করা
+                সেন্সর সনদটি চলচ্চিত্রের বাংলাদেশ পক্ষের প্রযোজক এফডিসির
+                ব্যবস্থাপনা পরিচালক নুজহাত ইয়াসমিন এবং ভারতের পক্ষে স্ক্রিপ্ট
+                রাইটার অতুল তেওয়ারির হাতে তুলে দেন। বাংলাদেশের ৬০ ভাগ ও ভারতের
+                ৪০ ভাগ ব্যয়ে নির্মিত এ বায়োপিকের শুটিং ২০২১ সালের ২২ জানুয়ারি
+                ভারতের মুম্বাই ফিল্ম সিটিতে শুরু হয়। ১৮ ডিসেম্বর বাংলাদেশে তা
+                শেষ হয়।
+              </p>
+              <p>
+                গত বছর ২০২২ সালের ১৭ মার্চ বঙ্গবন্ধুর জন্মবার্ষিকীতে
+                চলচ্চিত্রটির প্রথম পোস্টার, ৩ মে দ্বিতীয় পোস্টার এবং ১৯ মে
+                ফ্রান্সের কান চলচ্চিত্র উৎসবে সিনেমাটির ট্রেইলার রিলিজ করা হয়।
+                প্রধান তথ্য কমিশনার ড. আবদুল মালেক, সংস্কৃতি ব্যক্তিত্ব সাবেক
+                মন্ত্রী আসাদুজ্জামান নূর, বায়োপিকের অভিনিয়শিল্পীদের মধ্যে
+                বঙ্গবন্ধু চরিত্রাভিনেতা আরিফিন শুভ, বঙ্গমাতা চরিত্রাভিনেত্রী
+                নুসরাত ইমরোজ তিশা এবং দিলারা জামান, রাইসুল ইসলাম আসাদ, চঞ্চল
+                চৌধুরী, খায়রুল আলম সবুজ, ফজলুর রহমান বাবু, শহীদুল আলম সাচ্চু,
+                গাজী রাকায়েত, সংগীতা চৌধুরী, প্রার্থনা দিঘী, রিয়াজ আহমেদ,
+                সাব্বির আহমেদ, জায়েদ খান, সায়েম সামাদ, মোস্তাফিজুর রহমান,
+                হিমাদ্রি বড়ুয়া, স্ক্রিপ্ট রাইটার অতুল তেওয়ারি, সহযোগী পরিচালক
+                দয়াল নিহালানী, লাইন প্রডিউসার সতীশ শর্মা প্রমুখ অনুষ্ঠানে
+                উপস্থিত ছিলেন। ‘মুজিব-একটি জাতির রূপকার’ চলচ্চিত্রের শিল্পী,
+                কলা-কুশলী ছাড়াও আজীবন সম্মাননাপ্রাপ্ত অভিনেত্রী ডলি জহুর,
+                পরিচালক কাজী হায়াৎ, মুশফিকুর রহমান গুলজার, কামাল আহমেদ লিপু,
+                প্রযোজক-পরিবেশক খোরশেদ আলম খসরু, রহমতুল্লাহ, জ্যেষ্ঠ চিত্রগ্রাহক
+                আবদুল লতিফ বাচ্চু, সম্পাদক আবু মুসা দেবু, চলচ্চিত্র প্রদর্শক
+                উপদেষ্টা সুদীপ্ত দাস, প্রদর্শক আওলাদ হোসেন, দৈনিক কালবেলার
+                সম্পাদক ও প্রকাশক সন্তোষ শর্মা, আমির হামজা, চলচ্চিত্র সাংবাদিক
+                নেতা রিমন মাহফুজ, নাট্য পরিচালক কামরুজ্জামান সাগরসহ সিনেমা ও
+                শিল্প অঙ্গনের বিশিষ্টজনরা অনুষ্ঠানে অংশ নেন।
+              </p>
+              <div class="flex items-center details-bottom">
+                <div class="pe-5">
+                  <img class="details-bottom-image" src="/images/details-bottom/1.jpg" alt="" />
+                </div>
+  
+                <div>
+                  <a href="">সরকারের বিরুদ্ধে কংগ্রেসম্যানদের যা বলেছেন সেই শহিদুল
+                    আলম</a>
+                </div>
               </div>
-            </div>
-            <div class="details-bottom-button-link">
-              <a href="#">মার্কিন কংগ্রেসম্যান</a>
-              <a href="#">নাগরিক সমাজ</a>
-              <a href="#">বৈঠক</a>
+              <div class="details-bottom-button-link">
+                <a href="#">মার্কিন কংগ্রেসম্যান</a>
+                <a href="#">নাগরিক সমাজ</a>
+                <a href="#">বৈঠক</a>
+              </div>
             </div>
           </div>
+  
+          <section class="middle-bottom-section">
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-4 py-5">
+          
+              <a href="#">
+                <div class="card bg-base-100 shadow-xl rounded-md">
+                  <figure>
+                    <img class="rounded-t-md" src="images/details-middle/card-image.jpg" alt="image" />
+                  </figure>
+                  <div class="p-3">
+                    <h2 class="font-semibold">
+                      কর্মচারীদের ৮ হাজার কোটি টাকা বিলিয়ে দিলেন ব্যবসায়ী
+                    </h2>
+                    <p class="text-sm">
+                      প্রায় ৭৫০ মিলিয়ন ডলারের সম্পত্তি কর্মচারীদের মাঝে বিলিয়ে
+                      দিয়েছেন ..
+                    </p>
+                  </div>
+                </div>
+              </a>
+              <a href="#">
+                <div class="card bg-base-100 shadow-xl rounded-md">
+                  <figure>
+                    <img class="rounded-t-md" src="images/details-middle/card-image.jpg" alt="image" />
+                  </figure>
+                  <div class="p-3">
+                    <h2 class="font-semibold">
+                      কর্মচারীদের ৮ হাজার কোটি টাকা বিলিয়ে দিলেন ব্যবসায়ী
+                    </h2>
+                    <p class="text-sm">
+                      প্রায় ৭৫০ মিলিয়ন ডলারের সম্পত্তি কর্মচারীদের মাঝে বিলিয়ে
+                      দিয়েছেন ..
+                    </p>
+                  </div>
+                </div>
+              </a>
+              <a href="#">
+                <div class="card bg-base-100 shadow-xl rounded-md">
+                  <figure>
+                    <img class="rounded-t-md" src="images/details-middle/card-image.jpg" alt="image" />
+                  </figure>
+                  <div class="p-3">
+                    <h2 class="font-semibold">
+                      কর্মচারীদের ৮ হাজার কোটি টাকা বিলিয়ে দিলেন ব্যবসায়ী
+                    </h2>
+                    <p class="text-sm">
+                      প্রায় ৭৫০ মিলিয়ন ডলারের সম্পত্তি কর্মচারীদের মাঝে বিলিয়ে
+                      দিয়েছেন ..
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <a href="#">
+                <div class="card bg-base-100 rounded-md shadow-xl">
+                  <figure>
+                    <img class="rounded-t-md" src="images/details-middle/card-image.jpg" alt="image" />
+                  </figure>
+                  <div class="p-4">
+                    <h2 class="card-title">
+                      কর্মচারীদের ৮ হাজার কোটি টাকা বিলিয়ে দিলেন ব্যবসায়ী
+                    </h2>
+                    <p>
+                      প্রায় ৭৫০ মিলিয়ন ডলারের সম্পত্তি কর্মচারীদের মাঝে বিলিয়ে
+                      দিয়েছেন ভারতীয় বিজনেস টাইকুন আর থ্যাগরাজন। বাংলাদেশি
+                      মুদ্রায় যা প্রায় আট হাজার
+                    </p>
+                  </div>
+                </div>
+              </a>
+              <a href="#">
+                <div class="card bg-base-100 rounded-md shadow-xl">
+                  <figure>
+                    <img class="rounded-t-md" src="images/details-middle/card-image.jpg" alt="image" />
+                  </figure>
+                  <div class="p-4">
+                    <h2 class="card-title">
+                      কর্মচারীদের ৮ হাজার কোটি টাকা বিলিয়ে দিলেন ব্যবসায়ী
+                    </h2>
+                    <p>
+                      প্রায় ৭৫০ মিলিয়ন ডলারের সম্পত্তি কর্মচারীদের মাঝে বিলিয়ে
+                      দিয়েছেন ভারতীয় বিজনেস টাইকুন আর থ্যাগরাজন। বাংলাদেশি
+                      মুদ্রায় যা প্রায় আট হাজার
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </section>
+          <section class="middle-bottom-section">
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-4 py-5">
+          
+              <a href="#">
+                <div class="card bg-base-100 shadow-xl rounded-md">
+                  <figure>
+                    <img class="rounded-t-md" src="images/details-middle/card-image.jpg" alt="image" />
+                  </figure>
+                  <div class="p-3">
+                    <h2 class="font-semibold">
+                      কর্মচারীদের ৮ হাজার কোটি টাকা বিলিয়ে দিলেন ব্যবসায়ী
+                    </h2>
+                    <p class="text-sm">
+                      প্রায় ৭৫০ মিলিয়ন ডলারের সম্পত্তি কর্মচারীদের মাঝে বিলিয়ে
+                      দিয়েছেন ..
+                    </p>
+                  </div>
+                </div>
+              </a>
+              <a href="#">
+                <div class="card bg-base-100 shadow-xl rounded-md">
+                  <figure>
+                    <img class="rounded-t-md" src="images/details-middle/card-image.jpg" alt="image" />
+                  </figure>
+                  <div class="p-3">
+                    <h2 class="font-semibold">
+                      কর্মচারীদের ৮ হাজার কোটি টাকা বিলিয়ে দিলেন ব্যবসায়ী
+                    </h2>
+                    <p class="text-sm">
+                      প্রায় ৭৫০ মিলিয়ন ডলারের সম্পত্তি কর্মচারীদের মাঝে বিলিয়ে
+                      দিয়েছেন ..
+                    </p>
+                  </div>
+                </div>
+              </a>
+              <a href="#">
+                <div class="card bg-base-100 shadow-xl rounded-md">
+                  <figure>
+                    <img class="rounded-t-md" src="images/details-middle/card-image.jpg" alt="image" />
+                  </figure>
+                  <div class="p-3">
+                    <h2 class="font-semibold">
+                      কর্মচারীদের ৮ হাজার কোটি টাকা বিলিয়ে দিলেন ব্যবসায়ী
+                    </h2>
+                    <p class="text-sm">
+                      প্রায় ৭৫০ মিলিয়ন ডলারের সম্পত্তি কর্মচারীদের মাঝে বিলিয়ে
+                      দিয়েছেন ..
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <a href="#">
+                <div class="card bg-base-100 rounded-md shadow-xl">
+                  <figure>
+                    <img class="rounded-t-md" src="images/details-middle/card-image.jpg" alt="image" />
+                  </figure>
+                  <div class="p-4">
+                    <h2 class="card-title">
+                      কর্মচারীদের ৮ হাজার কোটি টাকা বিলিয়ে দিলেন ব্যবসায়ী
+                    </h2>
+                    <p>
+                      প্রায় ৭৫০ মিলিয়ন ডলারের সম্পত্তি কর্মচারীদের মাঝে বিলিয়ে
+                      দিয়েছেন ভারতীয় বিজনেস টাইকুন আর থ্যাগরাজন। বাংলাদেশি
+                      মুদ্রায় যা প্রায় আট হাজার
+                    </p>
+                  </div>
+                </div>
+              </a>
+              <a href="#">
+                <div class="card bg-base-100 rounded-md shadow-xl">
+                  <figure>
+                    <img class="rounded-t-md" src="images/details-middle/card-image.jpg" alt="image" />
+                  </figure>
+                  <div class="p-4">
+                    <h2 class="card-title">
+                      কর্মচারীদের ৮ হাজার কোটি টাকা বিলিয়ে দিলেন ব্যবসায়ী
+                    </h2>
+                    <p>
+                      প্রায় ৭৫০ মিলিয়ন ডলারের সম্পত্তি কর্মচারীদের মাঝে বিলিয়ে
+                      দিয়েছেন ভারতীয় বিজনেস টাইকুন আর থ্যাগরাজন। বাংলাদেশি
+                      মুদ্রায় যা প্রায় আট হাজার
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </section>
+          <section class="middle-bottom-section">
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-4 py-5">
+          
+              <a href="#">
+                <div class="card bg-base-100 shadow-xl rounded-md">
+                  <figure>
+                    <img class="rounded-t-md" src="images/details-middle/card-image.jpg" alt="image" />
+                  </figure>
+                  <div class="p-3">
+                    <h2 class="font-semibold">
+                      কর্মচারীদের ৮ হাজার কোটি টাকা বিলিয়ে দিলেন ব্যবসায়ী
+                    </h2>
+                    <p class="text-sm">
+                      প্রায় ৭৫০ মিলিয়ন ডলারের সম্পত্তি কর্মচারীদের মাঝে বিলিয়ে
+                      দিয়েছেন ..
+                    </p>
+                  </div>
+                </div>
+              </a>
+              <a href="#">
+                <div class="card bg-base-100 shadow-xl rounded-md">
+                  <figure>
+                    <img class="rounded-t-md" src="images/details-middle/card-image.jpg" alt="image" />
+                  </figure>
+                  <div class="p-3">
+                    <h2 class="font-semibold">
+                      কর্মচারীদের ৮ হাজার কোটি টাকা বিলিয়ে দিলেন ব্যবসায়ী
+                    </h2>
+                    <p class="text-sm">
+                      প্রায় ৭৫০ মিলিয়ন ডলারের সম্পত্তি কর্মচারীদের মাঝে বিলিয়ে
+                      দিয়েছেন ..
+                    </p>
+                  </div>
+                </div>
+              </a>
+              <a href="#">
+                <div class="card bg-base-100 shadow-xl rounded-md">
+                  <figure>
+                    <img class="rounded-t-md" src="images/details-middle/card-image.jpg" alt="image" />
+                  </figure>
+                  <div class="p-3">
+                    <h2 class="font-semibold">
+                      কর্মচারীদের ৮ হাজার কোটি টাকা বিলিয়ে দিলেন ব্যবসায়ী
+                    </h2>
+                    <p class="text-sm">
+                      প্রায় ৭৫০ মিলিয়ন ডলারের সম্পত্তি কর্মচারীদের মাঝে বিলিয়ে
+                      দিয়েছেন ..
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <a href="#">
+                <div class="card bg-base-100 rounded-md shadow-xl">
+                  <figure>
+                    <img class="rounded-t-md" src="images/details-middle/card-image.jpg" alt="image" />
+                  </figure>
+                  <div class="p-4">
+                    <h2 class="card-title">
+                      কর্মচারীদের ৮ হাজার কোটি টাকা বিলিয়ে দিলেন ব্যবসায়ী
+                    </h2>
+                    <p>
+                      প্রায় ৭৫০ মিলিয়ন ডলারের সম্পত্তি কর্মচারীদের মাঝে বিলিয়ে
+                      দিয়েছেন ভারতীয় বিজনেস টাইকুন আর থ্যাগরাজন। বাংলাদেশি
+                      মুদ্রায় যা প্রায় আট হাজার
+                    </p>
+                  </div>
+                </div>
+              </a>
+              <a href="#">
+                <div class="card bg-base-100 rounded-md shadow-xl">
+                  <figure>
+                    <img class="rounded-t-md" src="images/details-middle/card-image.jpg" alt="image" />
+                  </figure>
+                  <div class="p-4">
+                    <h2 class="card-title">
+                      কর্মচারীদের ৮ হাজার কোটি টাকা বিলিয়ে দিলেন ব্যবসায়ী
+                    </h2>
+                    <p>
+                      প্রায় ৭৫০ মিলিয়ন ডলারের সম্পত্তি কর্মচারীদের মাঝে বিলিয়ে
+                      দিয়েছেন ভারতীয় বিজনেস টাইকুন আর থ্যাগরাজন। বাংলাদেশি
+                      মুদ্রায় যা প্রায় আট হাজার
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </section>
         </div>
-
-        <section class="middle-bottom-section">
-          <div class="grid grid-cols-3 gap-5 py-5">
-            <a href="#">
-              <div class="card bg-base-100 shadow-xl">
-                <figure>
-                  <img src="images/details-middle/card-image.jpg" alt="image" />
-                </figure>
-                <div class="card-body">
-                  <h2 class="card-title">
-                    কর্মচারীদের ৮ হাজার কোটি টাকা বিলিয়ে দিলেন ব্যবসায়ী
-                  </h2>
-                  <p>
-                    প্রায় ৭৫০ মিলিয়ন ডলারের সম্পত্তি কর্মচারীদের মাঝে বিলিয়ে
-                    দিয়েছেন ভারতীয় বিজনেস টাইকুন আর থ্যাগরাজন। বাংলাদেশি
-                    মুদ্রায় যা প্রায় আট হাজার
-                  </p>
-                </div>
-              </div>
-            </a>
-            <a href="#">
-              <div class="card bg-base-100 shadow-xl">
-                <figure>
-                  <img src="images/details-middle/card-image.jpg" alt="image" />
-                </figure>
-                <div class="card-body">
-                  <h2 class="card-title">
-                    কর্মচারীদের ৮ হাজার কোটি টাকা বিলিয়ে দিলেন ব্যবসায়ী
-                  </h2>
-                  <p>
-                    প্রায় ৭৫০ মিলিয়ন ডলারের সম্পত্তি কর্মচারীদের মাঝে বিলিয়ে
-                    দিয়েছেন ভারতীয় বিজনেস টাইকুন আর থ্যাগরাজন। বাংলাদেশি
-                    মুদ্রায় যা প্রায় আট হাজার
-                  </p>
-                </div>
-              </div>
-            </a>
-            <a href="#">
-              <div class="card bg-base-100 shadow-xl">
-                <figure>
-                  <img src="images/details-middle/card-image.jpg" alt="image" />
-                </figure>
-                <div class="card-body">
-                  <h2 class="card-title">
-                    কর্মচারীদের ৮ হাজার কোটি টাকা বিলিয়ে দিলেন ব্যবসায়ী
-                  </h2>
-                  <p>
-                    প্রায় ৭৫০ মিলিয়ন ডলারের সম্পত্তি কর্মচারীদের মাঝে বিলিয়ে
-                    দিয়েছেন ভারতীয় বিজনেস টাইকুন আর থ্যাগরাজন। বাংলাদেশি
-                    মুদ্রায় যা প্রায় আট হাজার
-                  </p>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="grid grid-cols-2 gap-5">
-            <a href="#">
-              <div class="card bg-base-100 shadow-xl">
-                <figure>
-                  <img src="images/details-middle/card-image.jpg" alt="image" />
-                </figure>
-                <div class="card-body">
-                  <h2 class="card-title">
-                    কর্মচারীদের ৮ হাজার কোটি টাকা বিলিয়ে দিলেন ব্যবসায়ী
-                  </h2>
-                  <p>
-                    প্রায় ৭৫০ মিলিয়ন ডলারের সম্পত্তি কর্মচারীদের মাঝে বিলিয়ে
-                    দিয়েছেন ভারতীয় বিজনেস টাইকুন আর থ্যাগরাজন। বাংলাদেশি
-                    মুদ্রায় যা প্রায় আট হাজার
-                  </p>
-                </div>
-              </div>
-            </a>
-            <a href="#">
-              <div class="card bg-base-100 shadow-xl">
-                <figure>
-                  <img src="images/details-middle/card-image.jpg" alt="image" />
-                </figure>
-                <div class="card-body">
-                  <h2 class="card-title">
-                    কর্মচারীদের ৮ হাজার কোটি টাকা বিলিয়ে দিলেন ব্যবসায়ী
-                  </h2>
-                  <p>
-                    প্রায় ৭৫০ মিলিয়ন ডলারের সম্পত্তি কর্মচারীদের মাঝে বিলিয়ে
-                    দিয়েছেন ভারতীয় বিজনেস টাইকুন আর থ্যাগরাজন। বাংলাদেশি
-                    মুদ্রায় যা প্রায় আট হাজার
-                  </p>
-                </div>
-              </div>
-            </a>
-          </div>
-        </section>
-        <section class="middle-bottom-section">
-          <div class="grid grid-cols-3 gap-5 py-5">
-            <a href="#">
-              <div class="card bg-base-100 shadow-xl">
-                <figure>
-                  <img src="images/details-middle/card-image.jpg" alt="image" />
-                </figure>
-                <div class="card-body">
-                  <h2 class="card-title">
-                    কর্মচারীদের ৮ হাজার কোটি টাকা বিলিয়ে দিলেন ব্যবসায়ী
-                  </h2>
-                  <p>
-                    প্রায় ৭৫০ মিলিয়ন ডলারের সম্পত্তি কর্মচারীদের মাঝে বিলিয়ে
-                    দিয়েছেন ভারতীয় বিজনেস টাইকুন আর থ্যাগরাজন। বাংলাদেশি
-                    মুদ্রায় যা প্রায় আট হাজার
-                  </p>
-                </div>
-              </div>
-            </a>
-            <a href="#">
-              <div class="card bg-base-100 shadow-xl">
-                <figure>
-                  <img src="images/details-middle/card-image.jpg" alt="image" />
-                </figure>
-                <div class="card-body">
-                  <h2 class="card-title">
-                    কর্মচারীদের ৮ হাজার কোটি টাকা বিলিয়ে দিলেন ব্যবসায়ী
-                  </h2>
-                  <p>
-                    প্রায় ৭৫০ মিলিয়ন ডলারের সম্পত্তি কর্মচারীদের মাঝে বিলিয়ে
-                    দিয়েছেন ভারতীয় বিজনেস টাইকুন আর থ্যাগরাজন। বাংলাদেশি
-                    মুদ্রায় যা প্রায় আট হাজার
-                  </p>
-                </div>
-              </div>
-            </a>
-            <a href="#">
-              <div class="card bg-base-100 shadow-xl">
-                <figure>
-                  <img src="images/details-middle/card-image.jpg" alt="image" />
-                </figure>
-                <div class="card-body">
-                  <h2 class="card-title">
-                    কর্মচারীদের ৮ হাজার কোটি টাকা বিলিয়ে দিলেন ব্যবসায়ী
-                  </h2>
-                  <p>
-                    প্রায় ৭৫০ মিলিয়ন ডলারের সম্পত্তি কর্মচারীদের মাঝে বিলিয়ে
-                    দিয়েছেন ভারতীয় বিজনেস টাইকুন আর থ্যাগরাজন। বাংলাদেশি
-                    মুদ্রায় যা প্রায় আট হাজার
-                  </p>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="grid grid-cols-2 gap-5">
-            <a href="#">
-              <div class="card bg-base-100 shadow-xl">
-                <figure>
-                  <img src="images/details-middle/card-image.jpg" alt="image" />
-                </figure>
-                <div class="card-body">
-                  <h2 class="card-title">
-                    কর্মচারীদের ৮ হাজার কোটি টাকা বিলিয়ে দিলেন ব্যবসায়ী
-                  </h2>
-                  <p>
-                    প্রায় ৭৫০ মিলিয়ন ডলারের সম্পত্তি কর্মচারীদের মাঝে বিলিয়ে
-                    দিয়েছেন ভারতীয় বিজনেস টাইকুন আর থ্যাগরাজন। বাংলাদেশি
-                    মুদ্রায় যা প্রায় আট হাজার
-                  </p>
-                </div>
-              </div>
-            </a>
-            <a href="#">
-              <div class="card bg-base-100 shadow-xl">
-                <figure>
-                  <img src="images/details-middle/card-image.jpg" alt="image" />
-                </figure>
-                <div class="card-body">
-                  <h2 class="card-title">
-                    কর্মচারীদের ৮ হাজার কোটি টাকা বিলিয়ে দিলেন ব্যবসায়ী
-                  </h2>
-                  <p>
-                    প্রায় ৭৫০ মিলিয়ন ডলারের সম্পত্তি কর্মচারীদের মাঝে বিলিয়ে
-                    দিয়েছেন ভারতীয় বিজনেস টাইকুন আর থ্যাগরাজন। বাংলাদেশি
-                    মুদ্রায় যা প্রায় আট হাজার
-                  </p>
-                </div>
-              </div>
-            </a>
-          </div>
-        </section>
-        <section class="middle-bottom-section">
-          <div class="grid grid-cols-3 gap-5 py-5">
-            <a href="#">
-              <div class="card bg-base-100 shadow-xl">
-                <figure>
-                  <img src="images/details-middle/card-image.jpg" alt="image" />
-                </figure>
-                <div class="card-body">
-                  <h2 class="card-title">
-                    কর্মচারীদের ৮ হাজার কোটি টাকা বিলিয়ে দিলেন ব্যবসায়ী
-                  </h2>
-                  <p>
-                    প্রায় ৭৫০ মিলিয়ন ডলারের সম্পত্তি কর্মচারীদের মাঝে বিলিয়ে
-                    দিয়েছেন ভারতীয় বিজনেস টাইকুন আর থ্যাগরাজন। বাংলাদেশি
-                    মুদ্রায় যা প্রায় আট হাজার
-                  </p>
-                </div>
-              </div>
-            </a>
-            <a href="#">
-              <div class="card bg-base-100 shadow-xl">
-                <figure>
-                  <img src="images/details-middle/card-image.jpg" alt="image" />
-                </figure>
-                <div class="card-body">
-                  <h2 class="card-title">
-                    কর্মচারীদের ৮ হাজার কোটি টাকা বিলিয়ে দিলেন ব্যবসায়ী
-                  </h2>
-                  <p>
-                    প্রায় ৭৫০ মিলিয়ন ডলারের সম্পত্তি কর্মচারীদের মাঝে বিলিয়ে
-                    দিয়েছেন ভারতীয় বিজনেস টাইকুন আর থ্যাগরাজন। বাংলাদেশি
-                    মুদ্রায় যা প্রায় আট হাজার
-                  </p>
-                </div>
-              </div>
-            </a>
-            <a href="#">
-              <div class="card bg-base-100 shadow-xl">
-                <figure>
-                  <img src="images/details-middle/card-image.jpg" alt="image" />
-                </figure>
-                <div class="card-body">
-                  <h2 class="card-title">
-                    কর্মচারীদের ৮ হাজার কোটি টাকা বিলিয়ে দিলেন ব্যবসায়ী
-                  </h2>
-                  <p>
-                    প্রায় ৭৫০ মিলিয়ন ডলারের সম্পত্তি কর্মচারীদের মাঝে বিলিয়ে
-                    দিয়েছেন ভারতীয় বিজনেস টাইকুন আর থ্যাগরাজন। বাংলাদেশি
-                    মুদ্রায় যা প্রায় আট হাজার
-                  </p>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="grid grid-cols-2 gap-5">
-            <a href="#">
-              <div class="card bg-base-100 shadow-xl">
-                <figure>
-                  <img src="images/details-middle/card-image.jpg" alt="image" />
-                </figure>
-                <div class="card-body">
-                  <h2 class="card-title">
-                    কর্মচারীদের ৮ হাজার কোটি টাকা বিলিয়ে দিলেন ব্যবসায়ী
-                  </h2>
-                  <p>
-                    প্রায় ৭৫০ মিলিয়ন ডলারের সম্পত্তি কর্মচারীদের মাঝে বিলিয়ে
-                    দিয়েছেন ভারতীয় বিজনেস টাইকুন আর থ্যাগরাজন। বাংলাদেশি
-                    মুদ্রায় যা প্রায় আট হাজার
-                  </p>
-                </div>
-              </div>
-            </a>
-            <a href="#">
-              <div class="card bg-base-100 shadow-xl">
-                <figure>
-                  <img src="images/details-middle/card-image.jpg" alt="image" />
-                </figure>
-                <div class="card-body">
-                  <h2 class="card-title">
-                    কর্মচারীদের ৮ হাজার কোটি টাকা বিলিয়ে দিলেন ব্যবসায়ী
-                  </h2>
-                  <p>
-                    প্রায় ৭৫০ মিলিয়ন ডলারের সম্পত্তি কর্মচারীদের মাঝে বিলিয়ে
-                    দিয়েছেন ভারতীয় বিজনেস টাইকুন আর থ্যাগরাজন। বাংলাদেশি
-                    মুদ্রায় যা প্রায় আট হাজার
-                  </p>
-                </div>
-              </div>
-            </a>
-          </div>
-        </section>
       </div>
 
-      <div class="details-right-news col-span-3">
-        <div class="tab-container">
-          <div class="tab-buttons">
-            <button class="tab-button active" onclick="openTab(event, 'tab1')">
-              সর্বশেষ
-            </button>
-            <button class="tab-button" onclick="openTab(event, 'tab2')">
-              জনপ্রিয়
-            </button>
-          </div>
-
-          <div id="tab1" class="tab-content">
-            <div class="flex items-center pb-5">
-              <div class="number-box">১</div>
-
-              <a class="font-semibold" href="#">বাংলাদেশ নিয়ে বিবিসির খবরটি সঠিক নয়
-
+      <div class=" col-span-3 mt-3">
+        <div class="details-right-news bg-white rounded-md shadow-md">
+          <div class="tab-container rounded-md bg-white">
+            <div class="tab-buttons">
+              <button class="tab-button active" onclick="openTab(event, 'tab1')">
+                সর্বশেষ
+              </button>
+              <button class="tab-button" onclick="openTab(event, 'tab2')">
+                জনপ্রিয়
+              </button>
             </div>
-            <div class="flex items-center pb-5">
-              <div class="number-box">১</div>
 
-              <a class="font-semibold" href="#">বাংলাদেশ নিয়ে বিবিসির খবরটি সঠিক নয়
+            <div id="tab1" class="tab-content">
+              <div class="flex items-center pb-5">
+                <div class="number-box">১</div>
 
+                <a class="font-semibold" href="#">বাংলাদেশ নিয়ে বিবিসির খবরটি সঠিক নয়
+
+              </div>
+              <div class="flex items-center pb-5">
+                <div class="number-box">১</div>
+
+                <a class="font-semibold" href="#">বাংলাদেশ নিয়ে বিবিসির খবরটি সঠিক নয়
+
+              </div>
+              <div class="flex items-center pb-5">
+                <div class="number-box">১</div>
+
+                <a class="font-semibold" href="#">বাংলাদেশ নিয়ে বিবিসির খবরটি সঠিক নয়
+
+              </div>
+              <div class="flex items-center pb-5">
+                <div class="number-box">১</div>
+
+                <a class="font-semibold" href="#">বাংলাদেশ নিয়ে বিবিসির খবরটি সঠিক নয়
+
+              </div>
+              <div class="flex items-center pb-5">
+                <div class="number-box">১</div>
+
+                <a class="font-semibold" href="#">বাংলাদেশ নিয়ে বিবিসির খবরটি সঠিক নয়
+
+              </div>
+              <div class="flex items-center pb-1">
+                <div class="number-box">১</div>
+
+                <a class="font-semibold" href="#">বাংলাদেশ নিয়ে বিবিসির খবরটি সঠিক নয়
+
+              </div>
+              <div class="flex items-center pb-1">
+                <div class="number-box">১</div>
+
+                <a class="font-semibold" href="#">বাংলাদেশ নিয়ে বিবিসির খবরটি সঠিক নয়
+
+              </div>
+              <div class="flex items-center pb-1">
+                <div class="number-box">১</div>
+
+                <a class="font-semibold" href="#">বাংলাদেশ নিয়ে বিবিসির খবরটি সঠিক নয়
+
+              </div>
+              <div class="flex items-center pb-1">
+                <div class="number-box">১</div>
+
+                <a class="font-semibold" href="#">বাংলাদেশ নিয়ে বিবিসির খবরটি সঠিক নয়
+
+              </div>
+              <div class="flex items-center pb-1">
+                <div class="number-box">১</div>
+
+                <a class="font-semibold" href="#">বাংলাদেশ নিয়ে বিবিসির খবরটি সঠিক নয়
+
+              </div>
             </div>
-            <div class="flex items-center pb-5">
-              <div class="number-box">১</div>
+            <div id="tab2" class="tab-content">
+              <div class="flex items-center pb-5">
+                <div class="number-box">১</div>
 
-              <a class="font-semibold" href="#">বাংলাদেশ নিয়ে বিবিসির খবরটি সঠিক নয়
+                <a class="font-semibold" href="#">বাংলাদেশ নিয়ে বিবিসির খবরটি সঠিক নয়
 
-            </div>
-            <div class="flex items-center pb-5">
-              <div class="number-box">১</div>
+              </div>
+              <div class="flex items-center pb-5">
+                <div class="number-box">১</div>
 
-              <a class="font-semibold" href="#">বাংলাদেশ নিয়ে বিবিসির খবরটি সঠিক নয়
+                <a class="font-semibold" href="#">বাংলাদেশ নিয়ে বিবিসির খবরটি সঠিক নয়
 
-            </div>
-            <div class="flex items-center pb-5">
-              <div class="number-box">১</div>
+              </div>
+              <div class="flex items-center pb-5">
+                <div class="number-box">১</div>
 
-              <a class="font-semibold" href="#">বাংলাদেশ নিয়ে বিবিসির খবরটি সঠিক নয়
+                <a class="font-semibold" href="#">বাংলাদেশ নিয়ে বিবিসির খবরটি সঠিক নয়
 
-            </div>
-          </div>
-          <div id="tab2" class="tab-content">
-            <div class="flex items-center pb-5">
-              <div class="number-box">১</div>
+              </div>
+              <div class="flex items-center pb-5">
+                <div class="number-box">১</div>
 
-              <a class="font-semibold" href="#">বাংলাদেশ নিয়ে বিবিসির খবরটি সঠিক নয়
+                <a class="font-semibold" href="#">বাংলাদেশ নিয়ে বিবিসির খবরটি সঠিক নয়
 
-            </div>
-            <div class="flex items-center pb-5">
-              <div class="number-box">১</div>
+              </div>
+              <div class="flex items-center pb-5">
+                <div class="number-box">১</div>
 
-              <a class="font-semibold" href="#">বাংলাদেশ নিয়ে বিবিসির খবরটি সঠিক নয়
+                <a class="font-semibold" href="#">বাংলাদেশ নিয়ে বিবিসির খবরটি সঠিক নয়
 
-            </div>
-            <div class="flex items-center pb-5">
-              <div class="number-box">১</div>
+              </div>
+              <div class="flex items-center pb-5">
+                <div class="number-box">১</div>
 
-              <a class="font-semibold" href="#">বাংলাদেশ নিয়ে বিবিসির খবরটি সঠিক নয়
+                <a class="font-semibold" href="#">বাংলাদেশ নিয়ে বিবিসির খবরটি সঠিক নয়
 
-            </div>
-            <div class="flex items-center pb-5">
-              <div class="number-box">১</div>
+              </div>
+              <div class="flex items-center pb-5">
+                <div class="number-box">১</div>
 
-              <a class="font-semibold" href="#">বাংলাদেশ নিয়ে বিবিসির খবরটি সঠিক নয়
+                <a class="font-semibold" href="#">বাংলাদেশ নিয়ে বিবিসির খবরটি সঠিক নয়
 
-            </div>
-            <div class="flex items-center pb-5">
-              <div class="number-box">১</div>
+              </div>
+              <div class="flex items-center pb-5">
+                <div class="number-box">১</div>
 
-              <a class="font-semibold" href="#">বাংলাদেশ নিয়ে বিবিসির খবরটি সঠিক নয়
+                <a class="font-semibold" href="#">বাংলাদেশ নিয়ে বিবিসির খবরটি সঠিক নয়
 
+              </div>
+              <div class="flex items-center pb-5">
+                <div class="number-box">১</div>
+
+                <a class="font-semibold" href="#">বাংলাদেশ নিয়ে বিবিসির খবরটি সঠিক নয়
+
+              </div>
+              <div class="flex items-center pb-5">
+                <div class="number-box">১</div>
+
+                <a class="font-semibold" href="#">বাংলাদেশ নিয়ে বিবিসির খবরটি সঠিক নয়
+
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
   </section>
-  <!-- -------------------------------------Detals Section End-------------------------- ----->
 
-  <!------------------------ js Section----------------------- -->
+  <!-- --------------------------------
+       Footer section here 
+    ---------------------------------->
+    <footer>
+      <div class='main-foote mt-11 bg-[#000000d4] text-white'>
+        <div class='common-width'>
+          <footer class="footer text-base-content py-3 pt-10 shadow-xl md:shadow-none text-white">
+            <div class='grid w-full  grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-3 md:gap-6 md:gap-y-8 sm:gap-y-8'>
+              <div class='flex justify-center md:items-start items-center flex-col w-full'>
+                <img class='w-full p-5  mb-2' src="./images/logo.jpeg" alt="" />
+                <p class='text-center md:text-start text-white'>Call with Remote Talks<br />Providing reliable tech since
+                  2022</p>
+              </div>
+              <div class='flex md:items-start items-center w-full flex-col gap-2'>
+                <span class="footer-title">Services</span>
+                <div class='grid grid-cols-2 sm:grid-cols-4 md:grid-cols-1 gap-x-2 md:gap-1'>
+                  <a to="/meeting" class="link link-hover">Video Call</a>
+                  <a to="/meeting" class="link link-hover">Audio Call</a>
+                  <a to="/message" class="link link-hover">Live Chat</a>
+                  <a to="/participants" class="link link-hover">Add Friend</a>
+                  <a to="/message" class="link link-hover">Live Streaming</a>
+                </div>
+              </div>
+              <div class='flex md:items-start items-center  w-full flex-col gap-2'>
+                <span class="footer-title">Company</span>
+                <div class='flex md:flex-col  gap-3 md:gap-1'>
+                  <a to="/about" class="link link-hover">About us</a>
+                  <a to="/contact" class="link link-hover">Contact</a>
+                  <a to="/review" class="link link-hover">Review</a>
+                  <a class="link link-hover">Collaboration</a>
+                  <a to="/" class="link link-hover">Return home</a>
+                </div>
+              </div>
+              <div class='flex md:items-start items-center w-full flex-col gap-1'>
+                <span class="footer-title">Our Team</span>
+                <div class=''>
+                  <div class='flex items-center gap-1'>
+                    <span class='text-lg text-blue-400'>
+                      <FaCode></FaCode>
+                    </span>
+                    <a href="https://grsagor-portfolio.web.app/" target="blank" class="link link-hover">G.R. Sagor</a>
+                  </div>
+                  <div class='flex items-center gap-1'>
+                    <span class='text-lg text-blue-500'>
+                      <FaCode></FaCode>
+                    </span>
+                    <a href="https://portfolio-88a84.web.app/" target="blank" class="link link-hover">Nusrat Nova</a>
+                  </div>
+                  <div class='flex items-center gap-1'>
+                    <span class='text-lg text-blue-500'>
+                      <FaCode></FaCode>
+                    </span>
+                    <a href="https://transcendent-syrniki-78a004.netlify.app/" target="blank"
+                      class="link link-hover">Sharmin Akter</a>
+                  </div>
+                  <div class='flex items-center gap-1'>
+                    <span class='text-lg text-blue-600'>
+                      <FaCode></FaCode>
+                    </span>
+                    <a href="https://sina-porfolio.web.app/" target="blank" class="link link-hover">Md Anis Molla</a>
+                  </div>
+                  <div class='flex items-center gap-1'>
+                    <span class='text-lg text-blue-700'>
+                      <FaCode></FaCode>
+                    </span>
+                    <a href="https://mahmudul-protfolio.netlify.app/" target="blank" class="link link-hover">Ft Sobuj
+                      Hasan</a>
+                  </div>
+                  <div class='flex items-center gap-1'>
+                    <span class='text-lg text-blue-800'>
+                      <FaCode></FaCode>
+                    </span>
+                    <a href="https://md-shimul-molla-07.netlify.app/" target="blank" class="link link-hover">Md Shimul
+                      Molla</a>
+                  </div>
+                </div>
+  
+              </div>
+              <div class='w-full flex flex-col md:items-start items-center '>
+                <span class="footer-title">Connect Us</span>
+                <div>
+                  <div class="form-control w-full">
+                    <label class="label">
+                      <span class="label-text text-white">Enter your email address</span>
+                    </label>
+                    <div class="relative">
+                      <input type="text" placeholder="username@site.com" class="input input-bordered w-full pr-16"
+                        required />
+                      <button onClick={handleConnect}
+                        class="btn btn-primary bg-gradient-to-r from-primary to-blue-800 text-white absolute top-0 right-0 rounded-l-none">Send</button>
+                    </div>
+                  </div>
+                  <div class="grid grid-flow-col w-full pt-4 gap-4">
+                    <a href='https://twitter.com/' target="blank"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                        height="24" viewBox="0 0 24 24" class="fill-current">
+                        <path
+                          d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z">
+                        </path>
+                      </svg></a>
+                    <a href='https://www.youtube.com/' target="blank"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                        height="24" viewBox="0 0 24 24" class="fill-current">
+                        <path
+                          d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z">
+                        </path>
+                      </svg></a>
+                    <a href='https://www.facebook.com/' target="blank"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                        height="24" viewBox="0 0 24 24" class="fill-current">
+                        <path
+                          d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z">
+                        </path>
+                      </svg></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </footer>
+  
+        </div>
+        <div class='border-t-2 mt-4'>
+          <span class='text-center text-gray-300 block py-5'>© Copyright 2023 Morning Time</span>
+        </div>
+      </div>
+    </footer>
 
-  <script>
+  <!-- <script>
     tailwind.config = {
       theme: {
         extend: {
@@ -691,8 +909,7 @@
         },
       },
     };
-  </script>
-  <script src="https://cdn.tailwindcss.com"></script>
+  </script> -->
   <script src="./app.js"></script>
 </body>
 

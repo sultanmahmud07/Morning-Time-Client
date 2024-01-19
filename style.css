@@ -356,7 +356,7 @@ cursor: pointer;
     News Details page section css code here 
  =========================================================*/
 .details-left-news {
-  padding: 20px 0;
+  /* padding: 20px 0; */
 }
 .details-left-icon {
   padding-right: 10px;
@@ -686,7 +686,7 @@ color: blue;
 
 .slider-indicators {
   position: absolute;
-  bottom: 7px;
+  bottom: 0px;
   left: 50%;
 display: flex;
 justify-content: center;
@@ -694,8 +694,8 @@ margin-top: 1rem;
 }
 
 .indicator {
-width: 5px;
-height: 5px;
+width: 8px;
+height: 8px;
 margin: 0 0.5rem;
 background-color: #ccc;
 border-radius: 50%;
